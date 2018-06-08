@@ -1,0 +1,155 @@
+{extend name="public/base_admin" /}
+
+{block name="title"}
+        <title>{$settings['name']|default='快查云平台'}</title>
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+{/block}
+{block name="head"}
+<style>
+
+	
+</style>
+{/block}<!--end head-->
+
+{block name="body"}
+
+	<div class="weui-panel">
+		<div class="weui-panel__bd">
+			<div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc">
+					<a href="<?php echo \think\Url::build('/Admin/panel/userlist');?>"><<返回列表</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+<div class="weui-cells__title">修改资料</div>
+
+<div class="weui-cells weui-cells_form">
+	<form action="<?php echo \think\Url::build('userinfo');?>" method="post" id="save_form">
+	<div class="weui-cell">
+		<div class="weui-cell__hd"><label class="weui-label">* 登陆邮箱</label></div>
+		<div class="weui-cell__bd">
+			<input class="weui-input" type="email" id="setting_email"  placeholder="登陆邮箱" value="{$one.email}"/>
+		</div>
+	</div>
+	<div class="weui-cell weui-cell_warn">
+		<div class="weui-cell__hd"><label class="weui-label">登陆密码</label></div>
+		<div class="weui-cell__bd">
+			<input class="weui-input" type="password" id="setting_password"  placeholder="登陆密码 (留空不修改)"/> 
+		</div>
+	</div>
+	<div class="weui-cell weui-cell_warn">
+		<div class="weui-cell__hd"><label class="weui-label">确认密码</label></div>
+		<div class="weui-cell__bd">
+			<input class="weui-input" type="password" id="setting_password2"  placeholder="登陆密码"/>
+		</div>
+	</div>
+
+
+	<div class="weui-cell weui-cell_select weui-cell_select-after">
+		<div class="weui-cell__hd">
+			<label for="" class="weui-label">选择状态</label>
+		</div>
+		<div class="weui-cell__bd">
+			<select class="weui-select" name="status" id="input_status">
+				<option value="0">--无状态-暂无限制--</option>
+				<option value="1" {if condition="$one['status'] eq 1"}selected="true"{/if}>--正常-正常使用--</option>
+				<option value="2" {if condition="$one['status'] eq 2"}selected="true"{/if}>--锁定-不能登陆--</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="weui-cell">
+		<div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+		<div class="weui-cell__bd">
+			<input class="weui-input" type="text" id="setting_realname"  placeholder="管理员姓名" value="{$one.realname}"/>
+		</div>
+	</div>
+	<div class="weui-cell">
+		<div class="weui-cell__hd"><label class="weui-label">电话</label></div>
+		<div class="weui-cell__bd">
+			<input class="weui-input" type="tel" id="setting_tel"  placeholder="管理员电话" value="{$one.tel}"/>
+		</div>
+	</div>
+
+
+	<div class="weui-cell">
+		<div class="weui-cell__bd">
+			
+			<button type="submit" class="weui-btn weui-btn_primary" >保存</button>
+		
+		</div>
+	</div>
+	</form>
+</div>
+
+
+
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+<script>
+var _form_action = '<?php echo \think\Url::build('useredit');?>',_id = '{$one['id']}';
+$("#save_form").submit(function(){
+
+	var _data = {
+		"id":_id,
+		"email":$("#setting_email").val(),
+		"password":$("#setting_password").val(),
+		"password2":$("#setting_password2").val(),
+		"status":$("#input_status").val(),
+		"realname":$("#setting_realname").val(),
+		"tel":$("#setting_tel").val()
+	}
+	
+	if(_id<=0 || _data.password !="")
+	{
+		if(_data.password =="" || _data.password != _data.password2){
+			_ppsao.toast("确认密码错误", "forbidden");
+			return false;
+		}
+	}
+
+
+	_ppsao.showLoading("正在保存");
+	
+
+
+	$.ajax({
+	   type: "POST",
+	   url: _form_action,
+	   data: _data,
+	   dataType:"json",
+	   success: function(data){
+			_ppsao.hideLoading();
+
+		   if(data.status ==1)
+		   {
+				$("#setting_password").val('');
+				$("#setting_password2").val('');
+				_ppsao.toast(data.msg);
+		   }else{
+				_ppsao.toast(data.msg, "forbidden");
+		   }
+		  
+	   },
+	   error:function(){
+			_ppsao.hideLoading();
+			_ppsao.toast("请求失败，请重试", "forbidden");
+	   }
+	});
+
+	return false;
+});
+</script>
+{/block}

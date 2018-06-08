@@ -1,0 +1,31 @@
+[ 2018-01-15T08:50:19+08:00 ] 10.0.0.249 106.11.242.102 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.048574s][吞吐率：20.59req/s] [内存消耗：2,934.19kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001275s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001664s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+
+---------------------------------------------------------------
+[ 2018-01-15T10:51:24+08:00 ] 10.0.0.249 211.138.125.213 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.049388s][吞吐率：20.25req/s] [内存消耗：3,009.34kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001210s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001590s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000379s ]
+
+---------------------------------------------------------------
+[ 2018-01-15T11:36:41+08:00 ] 10.0.0.249 117.136.55.4 GET /index/wenan/view.html?id=75
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=75 [运行时间：0.098039s][吞吐率：10.20req/s] [内存消耗：3,483.94kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001099s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001631s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 75  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000857s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 75  AND `is_del` = 0     [ RunTime:0.038805s ]
+
+---------------------------------------------------------------
+[ 2018-01-15T11:36:48+08:00 ] 10.0.0.249 117.136.55.4 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D75
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D75 [运行时间：5.887041s][吞吐率：0.17req/s] [内存消耗：3,889.25kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000464s ]
+
+---------------------------------------------------------------

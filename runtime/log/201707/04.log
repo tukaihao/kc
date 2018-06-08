@@ -1,0 +1,48 @@
+[ 2017-07-04T09:13:05+08:00 ] 10.0.0.249 220.189.193.13 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.087961s][吞吐率：11.37req/s] [内存消耗：2,938.28kb] [文件加载：52]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/www/kc/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000422s ]
+
+---------------------------------------------------------------

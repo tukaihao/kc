@@ -1,0 +1,236 @@
+[ 2017-08-04T10:14:32+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.048521s][吞吐率：20.61req/s] [内存消耗：3,052.52kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15d3a723df31f8-0d07029c48ed3b-3a064d5a-ef55c-15d3a723df429; Hm_lvt_407473d433e871de861cf818aa1405a1=1498112647,1499924150; auth_login_email=wgd%40nbtv.com.cn; CNZZDATA1261825573=1240459067-1493350587-%7C1493350587',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->login[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001308s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000384s ]
+
+---------------------------------------------------------------
+[ 2017-08-04T10:14:34+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/index/index.html
+[ log ] kc.nbtv.cn/admin/index/index.html [运行时间：0.048831s][吞吐率：20.48req/s] [内存消耗：3,078.03kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, */*',
+  'referer' => 'http://kc.nbtv.cn/admin/index/login.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15d3a723df31f8-0d07029c48ed3b-3a064d5a-ef55c-15d3a723df429; Hm_lvt_407473d433e871de861cf818aa1405a1=1498112647,1499924150; auth_login_email=wgd%40nbtv.com.cn; CNZZDATA1261825573=1240459067-1493350587-%7C1493350587; PHPSESSID=vhlhj79005kefh8lolqs93hnm4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'auth_login_email',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2017-08-04T10:14:34+08:00 ] 10.0.0.249 220.189.193.13 GET /captcha.html
+[ log ] kc.nbtv.cn/captcha.html [运行时间：0.031521s][吞吐率：31.72req/s] [内存消耗：1,809.48kb] [文件加载：38]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5',
+  'referer' => 'http://kc.nbtv.cn/admin/index/index.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'UM_distinctid=15d3a723df31f8-0d07029c48ed3b-3a064d5a-ef55c-15d3a723df429; Hm_lvt_407473d433e871de861cf818aa1405a1=1498112647,1499924150; auth_login_email=wgd%40nbtv.com.cn; CNZZDATA1261825573=1240459067-1493350587-%7C1493350587; PHPSESSID=vhlhj79005kefh8lolqs93hnm4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/kc/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-04T10:16:51+08:00 ] 10.0.0.249 101.226.33.239 GET /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.049896s][吞吐率：20.04req/s] [内存消耗：3,051.65kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->login[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001707s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
+[ 2017-08-04T10:16:58+08:00 ] 10.0.0.249 101.226.33.200 GET /admin/index/index.html
+[ log ] kc.nbtv.cn/admin/index/index.html [运行时间：0.049460s][吞吐率：20.22req/s] [内存消耗：3,077.04kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'auth_login_email',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000668s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001477s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000412s ]
+
+---------------------------------------------------------------

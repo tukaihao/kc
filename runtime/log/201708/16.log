@@ -1,0 +1,1007 @@
+[ 2017-08-16T08:22:02+08:00 ] 10.0.0.249 106.11.225.224 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.048587s][吞吐率：20.58req/s] [内存消耗：2,938.34kb] [文件加载：52]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'kc.nbtv.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/www/kc/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001691s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000501s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T11:15:12+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.104309s][吞吐率：9.59req/s] [内存消耗：3,477.08kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000792s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.002049s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000862s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.044444s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T11:15:13+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.613245s][吞吐率：1.63req/s] [内存消耗：3,893.70kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=kllrcdorjo79hqu0eg9l3b1pf7; PHPSESSID_NS_Sig=oenCV6mfwmJ8_QO9; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000543s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001287s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000429s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T11:15:23+08:00 ] 10.0.0.249 117.185.27.113 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.092161s][吞吐率：10.85req/s] [内存消耗：3,476.76kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036906 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.002160s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000826s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.031255s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T11:58:36+08:00 ] 10.0.0.249 220.189.193.13 GET /test_for_errorpage_infoleak_vuln.html
+[ log ] kc.nbtv.cn/test_for_errorpage_infoleak_vuln.html [运行时间：0.031561s][吞吐率：31.68req/s] [内存消耗：1,797.33kb] [文件加载：39]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test_for_errorpage_infoleak_vuln',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0.2.1000 Chrome/47.0.2526.73 Safari/537.36',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => '_gscu_1227423144=84040027zzf9g910; UM_distinctid=15d54e7db087a-07df9cc8-4467174d-13c680-15d54e7db09af; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1502671853,1502758478,1502783931,1502844811; Hm_lpvt_31811d953dd2935cd73cccb67c24f245=1502853804',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T12:00:08+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/index/
+[ log ] kc.nbtv.cn/admin/index/ [运行时间：0.051078s][吞吐率：19.58req/s] [内存消耗：3,078.47kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0.2.1000 Chrome/47.0.2526.73 Safari/537.36',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => '_gscu_1227423144=84040027zzf9g910; UM_distinctid=15d54e7db087a-07df9cc8-4467174d-13c680-15d54e7db09af; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1502671853,1502758478,1502783931,1502844811; Hm_lpvt_31811d953dd2935cd73cccb67c24f245=1502853804',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'auth_login_email',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000638s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000432s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:00:08+08:00 ] 10.0.0.249 220.189.193.13 GET /captcha.html
+[ log ] kc.nbtv.cn/captcha.html [运行时间：0.027827s][吞吐率：35.94req/s] [内存消耗：1,809.68kb] [文件加载：38]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0.2.1000 Chrome/47.0.2526.73 Safari/537.36',
+  'dnt' => '1',
+  'referer' => 'http://kc.nbtv.cn/admin/index/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => '_gscu_1227423144=84040027zzf9g910; UM_distinctid=15d54e7db087a-07df9cc8-4467174d-13c680-15d54e7db09af; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1502671853,1502758478,1502783931,1502844811; Hm_lpvt_31811d953dd2935cd73cccb67c24f245=1502853804; PHPSESSID=abj20b1s7r5uh2omtnmvic09k0; PHPSESSID_NS_Sig=oenCV6mfyGx6tA66',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/kc/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T12:00:28+08:00 ] 10.0.0.249 220.189.193.13 GET /Admin/
+[ log ] kc.nbtv.cn/Admin/ [运行时间：0.051456s][吞吐率：19.43req/s] [内存消耗：3,078.62kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0.2.1000 Chrome/47.0.2526.73 Safari/537.36',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => '_gscu_1227423144=84040027zzf9g910; UM_distinctid=15d54e7db087a-07df9cc8-4467174d-13c680-15d54e7db09af; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1502671853,1502758478,1502783931,1502844811; Hm_lpvt_31811d953dd2935cd73cccb67c24f245=1502853804; PHPSESSID=abj20b1s7r5uh2omtnmvic09k0; PHPSESSID_NS_Sig=oenCV6mfyGx6tA66',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'auth_login_email',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000439s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T12:00:28+08:00 ] 10.0.0.249 220.189.193.13 GET /captcha.html
+[ log ] kc.nbtv.cn/captcha.html [运行时间：0.025662s][吞吐率：38.97req/s] [内存消耗：1,809.72kb] [文件加载：38]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0.2.1000 Chrome/47.0.2526.73 Safari/537.36',
+  'dnt' => '1',
+  'referer' => 'http://kc.nbtv.cn/Admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => '_gscu_1227423144=84040027zzf9g910; UM_distinctid=15d54e7db087a-07df9cc8-4467174d-13c680-15d54e7db09af; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1502671853,1502758478,1502783931,1502844811; Hm_lpvt_31811d953dd2935cd73cccb67c24f245=1502853804; PHPSESSID=abj20b1s7r5uh2omtnmvic09k0; PHPSESSID_NS_Sig=oenCV6mfyGx6tA66',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/kc/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-16T14:15:10+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.111079s][吞吐率：9.00req/s] [内存消耗：3,477.08kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001698s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.002101s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000858s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.050912s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:15:11+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.324173s][吞吐率：3.08req/s] [内存消耗：3,893.70kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000708s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001749s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000494s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:19:39+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.107551s][吞吐率：9.30req/s] [内存消耗：3,477.23kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.002048s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000859s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.046996s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:19:40+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.058693s][吞吐率：17.04req/s] [内存消耗：3,893.30kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001350s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000464s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:24:48+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.112031s][吞吐率：8.93req/s] [内存消耗：3,477.23kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000715s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001712s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.002046s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000811s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.054830s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:24:48+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.059095s][吞吐率：16.92req/s] [内存消耗：3,893.30kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000621s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001716s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:27:26+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.113122s][吞吐率：8.84req/s] [内存消耗：3,477.23kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001808s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.002047s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000931s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.054151s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:27:27+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.057810s][吞吐率：17.30req/s] [内存消耗：3,893.30kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=ha5ljd0catv5u8m6u380mkph60; PHPSESSID_NS_Sig=oenCV6mfwW8l5VO6; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498804568',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Mobile/14E304 MicroMessenger/6.5.14 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001716s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000356s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:30:40+08:00 ] 10.0.0.249 120.40.86.23 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.111470s][吞吐率：8.97req/s] [内存消耗：3,477.23kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; MI 5s Plus Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043409 Safari/537.36 MicroMessenger/6.5.10.1080 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/sharpp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001424s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001567s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000732s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.050676s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:30:41+08:00 ] 10.0.0.249 120.40.86.23 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.053742s][吞吐率：18.61req/s] [内存消耗：3,893.38kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; MI 5s Plus Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043409 Safari/537.36 MicroMessenger/6.5.10.1080 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=nrtjgi0h1m2tluuocsabpdm426; PHPSESSID_NS_Sig=oenCV6mfx3xkuVe8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000514s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000315s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:30:59+08:00 ] 10.0.0.249 120.40.86.23 GET /index/wenan/view.html?id=122
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=122 [运行时间：0.092335s][吞吐率：10.83req/s] [内存消耗：3,477.18kb] [文件加载：58]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; MI 5s Plus Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043409 Safari/537.36 MicroMessenger/6.5.10.1080 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/wxpic,image/sharpp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=nrtjgi0h1m2tluuocsabpdm426; PHPSESSID_NS_Sig=oenCV6mfx3xkuVe8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'wx_option',
+  7 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000685s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001738s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001760s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 122  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000837s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 122  AND `is_del` = 0     [ RunTime:0.033529s ]
+
+---------------------------------------------------------------
+[ 2017-08-16T14:30:59+08:00 ] 10.0.0.249 120.40.86.23 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D122 [运行时间：0.056937s][吞吐率：17.56req/s] [内存消耗：3,893.38kb] [文件加载：57]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'api',
+    2 => 'sign',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; MI 5s Plus Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043409 Safari/537.36 MicroMessenger/6.5.10.1080 NetType/WIFI Language/zh_CN',
+  'referer' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=nrtjgi0h1m2tluuocsabpdm426; PHPSESSID_NS_Sig=oenCV6mfx3xkuVe8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://kc.nbtv.cn/index/wenan/view.html?id=122',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Api->sign[ /home/www/kc/application/index/controller/Api.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000705s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000324s ]
+
+---------------------------------------------------------------

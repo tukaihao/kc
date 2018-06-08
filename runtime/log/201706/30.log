@@ -1,0 +1,1514 @@
+[ 2017-06-30T16:47:13+08:00 ] 10.0.0.249 220.189.193.13 GET /admin
+[ log ] kc.nbtv.cn/admin [运行时间：0.050027s][吞吐率：19.99req/s] [内存消耗：3,077.64kb] [文件加载：54]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'auth_login_email=hyp%40nbtv.com.cn; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/index/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'auth_login_email',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000683s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000509s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:13+08:00 ] 10.0.0.249 220.189.193.13 GET /captcha.html
+[ log ] kc.nbtv.cn/captcha.html [运行时间：0.031842s][吞吐率：31.41req/s] [内存消耗：1,809.02kb] [文件加载：38]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'auth_login_email=hyp%40nbtv.com.cn; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/www/kc/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:26+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.107489s][吞吐率：9.30req/s] [内存消耗：3,556.52kb] [文件加载：61]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://kc.nbtv.cn/admin',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '53',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'auth_login_email=hyp%40nbtv.com.cn; Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'hyp@nbtv.com.cn',
+  'password' => '670032',
+  'captcha' => '91994',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->login[ /home/www/kc/application/admin/controller/Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `email` = 'hyp@nbtv.com.cn'  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000644s ]
+[ sql ] [ SQL ] UPDATE `ppsao_admin`  SET `username`='',`lasttime`=1498812446,`lastip`='220.189.193.13',`logins`=logins+1  WHERE  `id` = 12       [ RunTime:0.048919s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:29+08:00 ] 10.0.0.249 220.189.193.13 GET /Admin/panel.html
+[ log ] kc.nbtv.cn/Admin/panel.html [运行时间：0.058336s][吞吐率：17.14req/s] [内存消耗：3,389.14kb] [文件加载：55]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'panel',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Panel->index[ /home/www/kc/application/admin/controller/Panel.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/panel/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001733s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000366s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:31+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.066124s][吞吐率：15.12req/s] [内存消耗：3,725.34kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://kc.nbtv.cn/Admin/panel.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->index[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/index.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'cat_id',
+  6 => 'kwd',
+  7 => 'pagesize',
+  8 => 'list',
+  9 => 'cat_arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001561s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001220s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:33+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=49
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=49 [运行时间：0.098082s][吞吐率：10.20req/s] [内存消耗：3,498.10kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '49',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000746s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001446s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001668s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 49  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000708s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 49  AND `is_del` = 0     [ RunTime:0.038907s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:38+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=48
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=48 [运行时间：0.121754s][吞吐率：8.21req/s] [内存消耗：3,518.73kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '48',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001528s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001633s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 48  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000797s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 48  AND `is_del` = 0     [ RunTime:0.061906s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:45+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=47
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=47 [运行时间：0.106358s][吞吐率：9.40req/s] [内存消耗：3,501.48kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '47',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000828s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 47  AND `is_del` = 0     [ RunTime:0.047165s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:56+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=47
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=47 [运行时间：0.062178s][吞吐率：16.08req/s] [内存消耗：3,514.38kb] [文件加载：56]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '47',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->edit[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/edit.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'one',
+  6 => 'cat_arr',
+  7 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001259s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001770s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000306s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:47:56+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.052814s][吞吐率：18.93req/s] [内存消耗：3,342.47kb] [文件加载：55]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'loadtemp',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=47',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '10',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'title',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->loadtemp[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/temp_title.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001371s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000583s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T16:59:29+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=47
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=47 [运行时间：0.112957s][吞吐率：8.85req/s] [内存消耗：3,501.35kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '47',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001706s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000577s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 47  AND `is_del` = 0     [ RunTime:0.054169s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:03:33+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=47
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=47 [运行时间：0.061233s][吞吐率：16.33req/s] [内存消耗：3,513.83kb] [文件加载：56]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '47',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->edit[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/edit.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'one',
+  6 => 'cat_arr',
+  7 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000757s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001450s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001444s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000417s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:03:33+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.052288s][吞吐率：19.12req/s] [内存消耗：3,342.47kb] [文件加载：55]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'loadtemp',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=47',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '10',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'title',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->loadtemp[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/temp_title.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000563s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:10:07+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.084742s][吞吐率：11.80req/s] [内存消耗：3,686.63kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=47',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '22027',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'template_id' => '47',
+  'title' => '模板二',
+  'intro' => '',
+  'catid' => '0',
+  'wxqr_aid' => '',
+  'wxqrcode' => '',
+  'file' => '',
+  'cover' => '',
+  'views' => '26',
+  'likes' => '0',
+  'author' => '',
+  'dateline' => '2017-06-14T14:58',
+  'rhref_text' => '阅读原文',
+  'rhref' => '',
+  'is_show_title' => '1',
+  'is_show_statis' => '1',
+  'editorValue' => '&lt;p&gt;&lt;ppp&gt;&lt;/ppp&gt;&lt;/p&gt;&lt;p&gt;&lt;section class=&quot;clistyle-section&quot; style=&quot;margin: 5px; border: currentColor; border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot;&gt;&lt;section style=&quot;border-color: rgb(0, 187, 236); margin: 0px auto -2px; padding: 5px; text-align: center; color: rgb(76, 175, 80); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot; data-clistyle-brushtype=&quot;bd&quot;&gt;&lt;p style=&quot;color: rgb(0, 187, 236); font-size: 18px; max-width: 100%; box-sizing: border-box;&quot; data-clistyle-brushtype=&quot;text&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 32px;&quot;&gt;&lt;strong&gt;总控1号机箱&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;192.168.100.100&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 10px; color: inherit; margin-right: auto; margin-left: auto; border-top-color: rgb(0, 187, 236); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 0.6em; border-right-width: 0.7em !important; border-left-width: 0.7em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot; data-clistyle-brushtype=&quot;bdt&quot;&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 10px; color: inherit; margin-top: -12px; margin-right: auto; margin-left: auto; border-top-color: rgb(254, 254, 254); border-right-color: transparent !important; border-bottom-color: rgb(254, 254, 254); border-left-color: transparent !important; border-top-width: 0.6em; border-right-width: 0.7em !important; border-left-width: 0.7em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;板卡信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;section style=&quot;font: 16px/normal sans-serif; margin: 1em 0px; text-align: center; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;section style=&quot;width: 2em; text-align: center;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;text-align: center; font-size: 14px; display: inline-block;&quot;&gt;&lt;table width=&quot;-49&quot;&gt;&lt;tbody&gt;&lt;tr class=&quot;firstRow&quot;&gt;&lt;td width=&quot;350&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;1&amp;nbsp; OMN主&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&quot;350&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span style=&quot;line-height: 1.5; background-color: transparent;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;10 &amp;nbsp;HD-1-M&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;2 &amp;nbsp;CCTV1-HD-M&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;11 &amp;nbsp;1HD-M&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;3&amp;nbsp;&amp;nbsp;&amp;nbsp;MCR13B&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;6&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;4 &amp;nbsp;MCR12A&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;6&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;5 &amp;nbsp;DELAY-M-HD&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;6 &amp;nbsp;VTR2&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;7 &amp;nbsp;LG-HD&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;8 &amp;nbsp;LG-HD&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;9 &amp;nbsp;高清主PGM&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;维护信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;2017.5 更换3号板卡&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;设备溯源.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;2017.1 购入&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;操作说明.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;按键说明&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->save[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001462s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000345s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `uid`=12,`title`='模板二',`content`='&lt;p&gt;&lt;ppp&gt;&lt;/ppp&gt;&lt;/p&gt;&lt;p&gt;&lt;section class=&quot;clistyle-section&quot; style=&quot;margin: 5px; border: currentColor; border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot;&gt;&lt;section style=&quot;border-color: rgb(0, 187, 236); margin: 0px auto -2px; padding: 5px; text-align: center; color: rgb(76, 175, 80); border-top-width: 2px; border-bottom-width: 2px; border-top-style: solid; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot; data-clistyle-brushtype=&quot;bd&quot;&gt;&lt;p style=&quot;color: rgb(0, 187, 236); font-size: 18px; max-width: 100%; box-sizing: border-box;&quot; data-clistyle-brushtype=&quot;text&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 32px;&quot;&gt;&lt;strong&gt;总控1号机箱&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;192.168.100.100&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 10px; color: inherit; margin-right: auto; margin-left: auto; border-top-color: rgb(0, 187, 236); border-right-color: transparent !important; border-left-color: transparent !important; border-top-width: 0.6em; border-right-width: 0.7em !important; border-left-width: 0.7em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot; data-clistyle-brushtype=&quot;bdt&quot;&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 10px; color: inherit; margin-top: -12px; margin-right: auto; margin-left: auto; border-top-color: rgb(254, 254, 254); border-right-color: transparent !important; border-bottom-color: rgb(254, 254, 254); border-left-color: transparent !important; border-top-width: 0.6em; border-right-width: 0.7em !important; border-left-width: 0.7em !important; border-top-style: solid; border-right-style: solid !important; border-left-style: solid !important; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: border-box;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;板卡信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;section style=&quot;font: 16px/normal sans-serif; margin: 1em 0px; text-align: center; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;section style=&quot;width: 2em; text-align: center;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;text-align: center; font-size: 14px; display: inline-block;&quot;&gt;&lt;table width=&quot;-49&quot;&gt;&lt;tbody&gt;&lt;tr class=&quot;firstRow&quot;&gt;&lt;td width=&quot;350&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;1&amp;nbsp; OMN主&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td width=&quot;350&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;p style=&quot;margin: 0px; padding: 0px;&quot;&gt;&lt;span style=&quot;line-height: 1.5; background-color: transparent;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;10 &amp;nbsp;HD-1-M&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;2 &amp;nbsp;CCTV1-HD-M&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;11 &amp;nbsp;1HD-M&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;3&amp;nbsp;&amp;nbsp;&amp;nbsp;MCR13B&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;6&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;4 &amp;nbsp;MCR12A&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;6&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;5 &amp;nbsp;DELAY-M-HD&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;6 &amp;nbsp;VTR2&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;7 &amp;nbsp;LG-HD&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;8 &amp;nbsp;LG-HD&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;span style=&quot;line-height: 21px; font-size: 14px; font-stretch: normal;&quot;&gt;9 &amp;nbsp;高清主PGM&lt;/span&gt;&lt;/td&gt;&lt;td width=&quot;100&quot; height=&quot;32&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; text-align: left; -ms-word-break: break-all;&quot;&gt;&lt;br/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;维护信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;2017.5 更换3号板卡&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;设备溯源.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;2017.1 购入&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; white-space: normal;&quot;&gt;&lt;span style=&quot;padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block;&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&lt;span style=&quot;padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); margin-right: 8px; background-color: rgb(0, 187, 236);&quot;&gt;操作说明.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 187, 236);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 112, 129);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;按键说明&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;&lt;/p&gt;',`intro`='',`author`='',`cover`='',`catid`=0,`rhref`='',`rhref_text`='阅读原文',`is_show_title`=1,`is_show_statis`=1,`is_vip`=1,`views`=26,`likes`=0,`is_tmp`=0,`updatetime`=1498813807,`dateline`=1497423480  WHERE  `id` = 47  AND `is_del` = 0                      [ RunTime:0.054184s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:10:11+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=47
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=47 [运行时间：0.109033s][吞吐率：9.17req/s] [内存消耗：3,516.13kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '47',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001533s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001625s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000833s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 47  AND `is_del` = 0     [ RunTime:0.048941s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:10:36+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=48
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=48 [运行时间：0.058253s][吞吐率：17.17req/s] [内存消耗：3,531.63kb] [文件加载：56]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '48',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->edit[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/edit.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'one',
+  6 => 'cat_arr',
+  7 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 48  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:10:36+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.054721s][吞吐率：18.27req/s] [内存消耗：3,342.47kb] [文件加载：55]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'loadtemp',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=48',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '10',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'title',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->loadtemp[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/temp_title.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001654s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000572s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:21:31+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=49
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=49 [运行时间：0.061805s][吞吐率：16.18req/s] [内存消耗：3,510.52kb] [文件加载：56]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '49',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->edit[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/edit.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'one',
+  6 => 'cat_arr',
+  7 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001646s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001649s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 49  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:21:31+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.052739s][吞吐率：18.96req/s] [内存消耗：3,342.52kb] [文件加载：55]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'loadtemp',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=49',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '10',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'title',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->loadtemp[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/temp_title.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000498s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:23:02+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=49
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=49 [运行时间：0.061689s][吞吐率：16.21req/s] [内存消耗：3,511.02kb] [文件加载：56]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '49',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->edit[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/edit.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'one',
+  6 => 'cat_arr',
+  7 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000707s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001602s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000988s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001795s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 49  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:23:02+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.052660s][吞吐率：18.99req/s] [内存消耗：3,342.52kb] [文件加载：55]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'loadtemp',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=49',
+  'accept-language' => 'zh-CN',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '10',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'title',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->loadtemp[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/wenan/temp_title.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'siet_url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000645s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:28:15+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.072384s][吞吐率：13.82req/s] [内存消耗：3,697.55kb] [文件加载：60]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wenan',
+    2 => 'save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/edit.html?id=49',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'kc.nbtv.cn',
+  'content-length' => '25378',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+)
+[ info ] [ PARAM ] array (
+  'template_id' => '49',
+  'title' => '模板三',
+  'intro' => '',
+  'catid' => '0',
+  'wxqr_aid' => '',
+  'wxqrcode' => '',
+  'file' => '',
+  'cover' => '',
+  'views' => '13',
+  'likes' => '0',
+  'author' => '',
+  'dateline' => '2017-06-27T13:20',
+  'rhref_text' => '阅读原文',
+  'rhref' => '',
+  'is_show_title' => '1',
+  'is_show_statis' => '1',
+  'editorValue' => '&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot;&gt;&lt;fieldset style=&quot;padding: 0px; border: 0px currentColor; border-image: none; text-align: center; box-sizing: border-box;&quot;&gt;&lt;section style=&quot;color: inherit; display: inline-block; box-sizing: border-box;&quot;&gt;&lt;section class=&quot;wweibrush&quot; style=&quot;border-color: rgb(25, 95, 173); margin: 0.2em 0px 0px; padding: 0px 0.5em 5px; color: rgb(25, 95, 173); line-height: 1; font-size: 1.8em; border-bottom-width: 1px; border-bottom-style: solid; max-width: 100%;&quot; data-brushtype=&quot;text&quot;&gt;&lt;span style=&quot;font-family: 微软雅黑,Microsoft YaHei;&quot;&gt;设备名称&lt;/span&gt;&lt;/section&gt;&lt;section class=&quot;wweibrush&quot; style=&quot;border-color: rgb(25, 95, 173); margin: 5px 1em; color: rgb(25, 95, 173); line-height: 1; font-size: 1em; box-sizing: border-box;&quot; data-brushtype=&quot;text&quot;&gt;&lt;span style=&quot;font-family: 微软雅黑,Microsoft YaHei;&quot;&gt;192.168.100.100&lt;/span&gt;&lt;/section&gt;&lt;/section&gt;&lt;/fieldset&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;1&lt;/section&gt;&lt;/section&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;设备信息&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;section style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;table width=&quot;435&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; data-width=&quot;100%&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td width=&quot;100&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;设备编码&lt;br/&gt;&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;703301-392&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;设备名称&lt;br/&gt;&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;高清演播室录像机&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;型号规格&lt;br/&gt;&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;AJ-PD500MC&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;制造商&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;松下&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;机身号&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 10pt; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;I4TBA0004&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;启用日期&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 10pt; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;2014.11&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;使用地点&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 10pt; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;高清上载&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;2&lt;/section&gt;&lt;/section&gt;&lt;p&gt;维护信息&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;section style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;table width=&quot;549&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; data-width=&quot;100%&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td width=&quot;100&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 16px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;日&amp;nbsp;&amp;nbsp;&amp;nbsp; 期&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;	维护内容&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2014.6&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;磁鼓时长&lt;br style=&quot;box-sizing: inherit;&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;2014.12&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2015.3&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2015.9&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2015.12&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2016.6&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;p style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br class=&quot;Apple-interchange-newline&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;3&lt;/section&gt;&lt;/section&gt;&lt;p&gt;设备溯源&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;4&lt;/section&gt;&lt;/section&gt;&lt;p&gt;操作说明&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/p&gt;',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wenan->save[ /home/www/kc/application/admin/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/admin/view/public/dispatch_jump.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'settings',
+  5 => 'code',
+  6 => 'msg',
+  7 => 'data',
+  8 => 'url',
+  9 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000624s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001498s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 12  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 49  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000359s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `uid`=12,`title`='模板三',`content`='&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot;&gt;&lt;fieldset style=&quot;padding: 0px; border: 0px currentColor; border-image: none; text-align: center; box-sizing: border-box;&quot;&gt;&lt;section style=&quot;color: inherit; display: inline-block; box-sizing: border-box;&quot;&gt;&lt;section class=&quot;wweibrush&quot; style=&quot;border-color: rgb(25, 95, 173); margin: 0.2em 0px 0px; padding: 0px 0.5em 5px; color: rgb(25, 95, 173); line-height: 1; font-size: 1.8em; border-bottom-width: 1px; border-bottom-style: solid; max-width: 100%;&quot; data-brushtype=&quot;text&quot;&gt;&lt;span style=&quot;font-family: 微软雅黑,Microsoft YaHei;&quot;&gt;设备名称&lt;/span&gt;&lt;/section&gt;&lt;section class=&quot;wweibrush&quot; style=&quot;border-color: rgb(25, 95, 173); margin: 5px 1em; color: rgb(25, 95, 173); line-height: 1; font-size: 1em; box-sizing: border-box;&quot; data-brushtype=&quot;text&quot;&gt;&lt;span style=&quot;font-family: 微软雅黑,Microsoft YaHei;&quot;&gt;192.168.100.100&lt;/span&gt;&lt;/section&gt;&lt;/section&gt;&lt;/fieldset&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;1&lt;/section&gt;&lt;/section&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;font-family: arial, helvetica, sans-serif;&quot;&gt;设备信息&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;section style=&quot;font: 16px/normal sans-serif; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&lt;table width=&quot;435&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; data-width=&quot;100%&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td width=&quot;100&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;设备编码&lt;br/&gt;&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;703301-392&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;设备名称&lt;br/&gt;&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;高清演播室录像机&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;型号规格&lt;br/&gt;&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;AJ-PD500MC&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;制造商&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;松下&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;机身号&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 10pt; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;I4TBA0004&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;启用日期&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 10pt; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;2014.11&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;使用地点&lt;/td&gt;&lt;td style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 10pt; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;高清上载&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/normal sans-serif; margin: 5px 0px; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -webkit-text-stroke-width: 0px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;2&lt;/section&gt;&lt;/section&gt;&lt;p&gt;维护信息&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;section style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; display: block; white-space: normal; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;table width=&quot;549&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; data-width=&quot;100%&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td width=&quot;100&quot; align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 16px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;日&amp;nbsp;&amp;nbsp;&amp;nbsp; 期&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;	维护内容&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2014.6&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;磁鼓时长&lt;br style=&quot;box-sizing: inherit;&quot;/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;2014.12&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2015.3&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2015.9&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2015.12&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(245, 245, 245); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;2016.6&lt;/span&gt;&lt;/td&gt;&lt;td align=&quot;center&quot; valign=&quot;middle&quot; style=&quot;background: rgb(252, 252, 252); padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(252, 252, 252);&quot;&gt;磁鼓时长&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/section&gt;&lt;p style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br class=&quot;Apple-interchange-newline&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;3&lt;/section&gt;&lt;/section&gt;&lt;p&gt;设备溯源&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; border: currentColor; border-image: none;&quot;&gt;&lt;section style=&quot;width: 100%; vertical-align: bottom; display: inline-block;&quot;&gt;&lt;section style=&quot;border-color: rgb(25, 95, 173); width: 90%; border-top-width: 1px; border-top-style: solid; float: left;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;border-radius: 100%; width: 8px; height: 8px; color: rgb(255, 255, 255); margin-top: -4px; float: left; background-color: rgb(25, 95, 173);&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;margin: -1.2em 0px 0px; border-radius: 100%; border: 1px solid rgb(25, 95, 173); border-image: none; width: 2em; height: 2em; text-align: center; color: rgb(255, 255, 255); line-height: 2em; font-family: &amp;quot;Microsoft YaHei&amp;quot;; font-size: 1em; font-style: normal; font-weight: inherit; text-decoration: inherit; vertical-align: top; display: inline-block; background-color: rgb(25, 95, 173);&quot;&gt;4&lt;/section&gt;&lt;/section&gt;&lt;p&gt;操作说明&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/p&gt;',`intro`='',`author`='',`cover`='',`catid`=0,`rhref`='',`rhref_text`='阅读原文',`is_show_title`=1,`is_show_statis`=1,`is_vip`=1,`views`=13,`likes`=0,`is_tmp`=0,`updatetime`=1498814895,`dateline`=1498540800  WHERE  `id` = 49  AND `is_del` = 0                      [ RunTime:0.042178s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:28:18+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=49
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=49 [运行时间：0.105290s][吞吐率：9.50req/s] [内存消耗：3,520.61kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '49',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000672s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001692s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 49  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000782s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 49  AND `is_del` = 0     [ RunTime:0.046703s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:28:39+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=47
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=47 [运行时间：0.084242s][吞吐率：11.87req/s] [内存消耗：3,516.67kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '47',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 47  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000666s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 47  AND `is_del` = 0     [ RunTime:0.029391s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:28:44+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=48
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=48 [运行时间：0.113343s][吞吐率：8.82req/s] [内存消耗：3,518.73kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '48',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001777s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 48  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000764s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 48  AND `is_del` = 0     [ RunTime:0.054117s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:28:54+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=49
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=49 [运行时间：0.096179s][吞吐率：10.40req/s] [内存消耗：3,521.20kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '49',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001768s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 49  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000816s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 49  AND `is_del` = 0     [ RunTime:0.036765s ]
+
+---------------------------------------------------------------
+[ 2017-06-30T17:28:59+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=48
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=48 [运行时间：0.094490s][吞吐率：10.58req/s] [内存消耗：3,518.73kb] [文件加载：59]
+[ info ] [ LANG ] /home/www/kc/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wenan',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'kc.nbtv.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'referer' => 'http://kc.nbtv.cn/admin/wenan/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_31811d953dd2935cd73cccb67c24f245=1498725669; PHPSESSID=odh2ru96fuuaio03ed1ogj9540; auth_login_email=hyp%40nbtv.com.cn',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '48',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Wenan->view[ /home/www/kc/application/index/controller/Wenan.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /home/www/kc/public/../application/index/view/wenan/view.html [ array (
+  0 => '_controller',
+  1 => '_action',
+  2 => '_timestamp',
+  3 => '_user',
+  4 => 'is_mobile',
+  5 => 'settings',
+  6 => 'one',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001800s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 48  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000814s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 48  AND `is_del` = 0     [ RunTime:0.035202s ]
+
+---------------------------------------------------------------

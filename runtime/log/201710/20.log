@@ -1,0 +1,34 @@
+[ 2017-10-20T12:44:13+08:00 ] 10.0.0.249 106.11.225.27 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.048058s][吞吐率：20.81req/s] [内存消耗：2,934.19kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001026s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000423s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T17:46:39+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=140
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=140 [运行时间：0.105268s][吞吐率：9.50req/s] [内存消耗：3,472.84kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 140  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000740s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 140  AND `is_del` = 0     [ RunTime:0.047138s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T17:46:40+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D140
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D140 [运行时间：0.656322s][吞吐率：1.52req/s] [内存消耗：3,889.09kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001072s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000295s ]
+
+---------------------------------------------------------------
+[ 2017-10-20T17:46:47+08:00 ] 10.0.0.249 117.185.27.115 GET /index/wenan/view.html?id=140
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=140 [运行时间：0.109167s][吞吐率：9.16req/s] [内存消耗：3,472.48kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001779s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 140  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000797s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 140  AND `is_del` = 0     [ RunTime:0.049296s ]
+
+---------------------------------------------------------------

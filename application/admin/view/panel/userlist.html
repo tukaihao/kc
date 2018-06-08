@@ -1,0 +1,146 @@
+{extend name="public/base_admin" /}
+
+{block name="title"}
+        <title>{$settings['name']|default='快查云平台'}</title>
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+{/block}
+{block name="head"}
+<style>
+
+	
+</style>
+{/block}<!--end head-->
+
+{block name="body"}
+
+
+	<div class="weui-panel">
+		<div class="weui-panel__hd">管理员列表</div>
+		<div class="weui-panel__bd">
+			<div class="weui-media-box weui-media-box_text">
+				<ul class="weui-media-box__info">
+					<li class="weui-media-box__info__meta"><a href="<?php echo \think\Url::build('panel/useredit');?>">添加管理员</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<div class="weui-panel">
+		
+		<form id="page_form" method="get">
+		<input type="submit" class="hide"/>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<div class="weui-cells weui-cells_form mt0">
+					<div class="weui-search-bar" id="search_bar">
+						
+							<div class="weui-search-bar__box">
+								<i class="weui-icon-search"></i>
+								<input type="search" class="weui-search-bar__input" id="search_input" name="kwd" value="{$kwd}" placeholder="搜索" />
+								<a href="javascript:" class="weui-icon-clear" id="search_clear"></a>
+							</div>
+					
+						<a href="javascript:" class="weui-search-bar__cancel-btn" id="search_cancel">取消</a>
+					</div>
+				</div>
+			</div>
+			
+
+
+			<div class="weui-flex__item">
+				<div class="weui-cells weui-cells_form mt0">
+						<div class="weui-cell weui-cell_vcode">
+							<div class="weui-cell__hd">
+								<label class="weui-label">每页显示</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input class="weui-input" type="number" name="pagesize" value="{$pagesize}" placeholder="每页显示数据">
+							</div>
+							<div class="weui-cell__ft">
+								<a href="javascript:void(0);" onclick="page_form.submit();" class="weui-vcode-btn" type="submit">确定</a>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			
+			
+
+		</div>
+		</form>
+		
+
+
+		<div class="weui-panel__hd">管理员列表</div>
+		<div class="weui-panel__bd">
+
+
+			{volist name='list' id='vo'}
+			<div class="weui-media-box weui-media-box_text" id="list-item-{$vo.id}">
+
+				<h4 class="weui-media-box__title">{$vo['email']}</h4>
+				<p class="weui-media-box__desc">{$vo['realname']}</p>
+		
+				<ul class="weui-media-box__info">
+					<li class="weui-media-box__info__meta">{$vo.dateline|date="Y-m-d H:i",###}</li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('panel/useredit','id='.$vo['id']);?>">编辑</a></li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="javascript:void(0);" class="list-del" data-id="{$vo['id']}">删除</a></li>
+				</ul>
+			</div>
+			{/volist}
+
+
+		</div>
+		<div class="weui-panel__bd"><div class="pager">{$list->render()}</div></div>
+
+	</div> 
+
+
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+
+<script>
+$(function(){
+
+
+	$(".list-del").click(function(){
+		var _id = $(this).attr("data-id");
+
+		if(confirm("你确定删除吗?"))
+		{
+			_ppsao.showLoading("正在删除");
+			$.ajax({
+				   type: "POST",
+				   url: "<?php echo \think\Url::build('userdel');?>",
+				   data: {id:_id},
+				   dataType:"json",
+				   success: function(data){
+					   _ppsao.hideLoading();
+					   if(data.status ==1)
+					   {
+						   $("#list-item-"+_id).remove();
+							_ppsao.toast(data.msg);
+
+					   }else{
+							_ppsao.toast(data.msg, "forbidden");
+					   }
+					  
+				   },
+				   error:function(){
+						_ppsao.hideLoading();
+						_ppsao.toast("请求失败，请重试", "forbidden");
+				   }
+			});
+		}
+	});
+});
+</script>
+
+{/block}

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+{block name="title"}
+    <title>快查云平台</title>
+    <meta name="keyword" content="快查云平台">
+    <meta name="description" content="快查云平台">
+{/block}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    {block name="head"}<!--head  style or js -->{/block}
+ </head>
+<body ontouchstart>
+
+{if condition="$is_mobile and $settings['is_touchmove'] eq 1"}
+	<div style="width:100%; height:100%; font-size:14px; color:#999; text-align:center; padding-top:10px;background:#2e3132" id="ppsao_domain"></div>
+	<div id="scroll" style="position:absolute; overflow:scroll; -webkit-overflow-scrolling: touch; top:0; left:0; bottom:0; right:0;">
+	<div style="background:#fff;min-height:100%;">
+{/if}
+{block name="body"}<!--主体内容-->{/block}
+
+{if condition="$is_mobile and $settings['is_touchmove'] eq 1"}
+	</div></div>
+{/if}
+
+
+
+<!--BEGIN toast-->
+<div id="toast" style="display: none;">
+	<div class="weui-mask_transparent"></div>
+	<div class="weui-toast">
+		<i class="weui-icon-cancel weui-icon-cancel-no-circle weui-icon_toast"></i>
+		<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+		<p class="weui-toast__content">已完成</p>
+	</div>
+</div>
+<!--end toast-->
+
+<!-- loading toast -->
+<div id="loadingToast" style="display:none;">
+	<div class="weui-mask_transparent"></div>
+	<div class="weui-toast">
+		<i class="weui-loading weui-icon_toast"></i>
+		<p class="weui-toast__content">数据加载中</p>
+	</div>
+</div>
+
+
+
+
+<script src="/static/js/jquery-1.8.2.min.js"></script>
+<!-- script src="/static/weui/dist/js/zepto.min.js"></script -->
+<!-- script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script -->
+<script type="text/javascript">
+	var _ppsao = {
+		
+		showLoading : function(str){
+			if(!str) str = "数据加载中";
+			var $loadingToast = $('#loadingToast');
+			if ($loadingToast.css('display') != 'none') {
+				return;
+			}
+			$loadingToast.find(".weui-toast__content").text(str);
+			$loadingToast.fadeIn(100);
+		},hideLoading : function(){
+			var $loadingToast = $('#loadingToast');
+			$loadingToast.fadeOut(100);
+		},toast:function(str,ac){
+			if(!str) str = "已完成";
+			var $toast = $('#toast');
+
+			$toast.find(".weui-toast__content").text(str);
+			
+			var s = 1000;
+			if(ac == 'forbidden'){
+				s = 2000;
+				$toast.find(".weui-icon-cancel-no-circle").show();
+				$toast.find(".weui-icon-success-no-circle").hide();
+			}else{
+				$toast.find(".weui-icon-cancel-no-circle").hide();
+				$toast.find(".weui-icon-success-no-circle").show();
+			}
+			if ($toast.css('display') != 'none') {
+				return;
+			}
+			
+			$toast.fadeIn(100);
+			setTimeout(function () {
+				$toast.fadeOut(100);
+			}, s);
+
+		}
+	};
+
+
+{if condition="$is_mobile and $settings['is_touchmove'] eq 1"}
+
+	var overscroll = function(el) {
+	  el.addEventListener('touchstart', function() {
+		var top = el.scrollTop
+		  , totalScroll = el.scrollHeight
+		  , currentScroll = top + el.offsetHeight
+		//If we're at the top or the bottom of the containers
+		//scroll, push up or down one pixel.
+		//
+		//this prevents the scroll from "passing through" to
+		//the body.
+		if(top === 0) {
+		  el.scrollTop = 1
+		} else if(currentScroll === totalScroll) {
+		  el.scrollTop = top - 1
+		}
+	  });
+	  el.addEventListener('touchmove', function(evt) {
+		//if the content is actually scrollable, i.e. the content is long enough
+		//that scrolling can occur
+		if(el.offsetHeight < el.scrollHeight)
+		  evt._isScroller = true
+	  })
+	};
+	overscroll(document.querySelector('#scroll'));
+	document.body.addEventListener('touchmove', function(evt) {
+	  //In this case, the default behavior is scrolling the body, which
+	  //would result in an overflow.  Since we don't want that, we preventDefault.
+	  if(!evt._isScroller) {
+		evt.preventDefault()
+	  }
+	});
+
+
+
+	$(function(){
+		setTimeout(function(){$('#ppsao_domain').html('{$settings['touchmove_text']}');},1000)
+	});
+
+{/if}
+</script>
+{block name="footer_js"}<!--footer js -->{/block}
+
+{include file="public:wxjs"/}
+
+{include file="public:tongji"/}
+
+</body>
+</html>

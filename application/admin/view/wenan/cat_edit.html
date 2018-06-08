@@ -1,0 +1,160 @@
+{extend name="public/base_admin" /}
+
+{block name="title"}
+        <title>{$settings['name']|default='快查云平台'}</title>
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+{/block}
+{block name="head"}
+<style>
+
+</style>
+
+{/block}<!--end head-->
+
+{block name="body"}
+
+
+	<div class="weui-panel">
+		<div class="weui-panel__bd">
+			<div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc">
+					<a href="<?php echo \think\Url::build('wenan/cat');?>"><< 返回列表</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+<form action="<?php echo \think\Url::build('cat_edit');?>" method="post" id="save_form">
+	
+	<input type="hidden" name="del_attids" id="del_attids" value="">
+
+
+	<div class="weui-flex">
+		<div class="weui-flex__item">
+		
+
+					<div class="weui-cells weui-cells_form ">
+						
+						<div class="weui-cell weui-cell_select weui-cell_select-after">
+							<div class="weui-cell__hd">
+								<label for="" class="weui-label">上级分类</label>
+							</div>
+							<div class="weui-cell__bd">
+								<select class="weui-select" name="pid" id="input_pid">
+									<option value="0">顶级分类</option>
+									{volist name="parent_arr" id="vo"}
+									<option value="{$vo['id']}" {if condition="$one['pid'] eq $vo['id']"}selected="true"{/if}>{$vo['catname']}</option>
+									{/volist}
+								</select>
+							</div>
+						</div>
+
+
+						<div class="weui-cell">
+							<div class="weui-cell__hd"><label class="weui-label">分类名称</label></div>
+							<div class="weui-cell__bd">
+								<input class="weui-input" type="text" id="input_catname"  placeholder="请输入分类名称" value="{$one['catname']}"/>
+							</div>
+						</div>
+
+						<div class="weui-cell">
+							<div class="weui-cell__hd"><label class="weui-label">排序</label></div>
+							<div class="weui-cell__bd">
+								<input class="weui-input" type="number" id="input_nav_sort"  placeholder="请输入排序" value="{$one['nav_sort']}"/>
+							</div>
+						</div>
+
+					
+
+						<div class="weui-cell">
+							<div class="weui-cell__bd">
+								<button type="submit" class="weui-btn weui-btn_primary" >保存</button>
+							</div>
+						</div>
+
+						<br/><br/><br/>
+
+					</div>
+					
+
+		</div>
+		<div class="weui-flex__item">
+
+				<div class="weui-cells weui-cells_form ">
+					
+					
+				</div>
+
+
+		</div>
+	</div>
+</form>
+
+
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+
+
+<script type="text/javascript">
+
+var _form_action = '<?php echo \think\Url::build('cat_edit');?>',_id = '{$one['id']}';
+
+$(function(){
+	
+	
+	$("#save_form").submit(function(){
+		
+		var _data = {
+			"id":_id,
+			"pid":$("#input_pid").val(),
+			"catname":$("#input_catname").val(),
+			"nav_sort":$("#input_nav_sort").val()
+		}
+	
+		if(!_data.catname){
+			_ppsao.toast("请填写分类名称", "forbidden");
+			return false;
+		}
+
+		_ppsao.showLoading("正在保存");
+
+		$.ajax({
+		   type: "POST",
+		   url: _form_action,
+		   data: _data,
+		   dataType:"json",
+		   success: function(data){
+				_ppsao.hideLoading();
+
+			   if(data.status ==1)
+			   {
+					_ppsao.toast(data.msg);
+					if(_id <=0)
+				   {
+						location.href= data.data.href;
+				   }
+			   }else{
+					_ppsao.toast(data.msg, "forbidden");
+			   }
+		   },
+		   error:function(){
+				_ppsao.hideLoading();
+				_ppsao.toast("请求失败，请重试", "forbidden");
+		   }
+		});
+
+		return false;
+	});
+
+
+});     
+
+
+
+</script>
+{/block}

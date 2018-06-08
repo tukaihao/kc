@@ -1,0 +1,89 @@
+{extend name="public/base_weui" /}
+
+{block name="title"}
+        <title>{$settings['name']|default='快查云平台'}</title>
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+{/block}
+{block name="head"}
+
+<style>
+	.weui-cells_form{
+		max-width:500px;
+		margin:0 auto;
+		border-left:1px solid #D9D9D9;
+		border-right:1px solid #D9D9D9;
+	}
+
+	.page{
+		border-top:2px solid #3cc51f;
+	}
+	.page .page__title,.page .page__desc{text-align:center;}
+</style>
+{/block}<!--end head-->
+
+{block name="body"}
+
+<div class="container" id="container">
+
+	<div class="page">
+
+		<div class="page__hd">
+			<h1 class="page__title">{$settings['name']|default='快查云平台'}</h1>
+			<p class="page__desc">管理中心</p>
+		</div>
+
+
+		<div class="weui-cells weui-cells_form">
+		<form action="<?php echo \think\Url::build('login');?>" method="post">
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">登陆邮箱</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="email" name="email"  placeholder="登陆邮箱" value="{$auth_login_email}"/>
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">登陆密码</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="password" name="password"  placeholder="登陆密码" autocomplete="off"/>
+				</div>
+			</div>
+			
+
+			<div class="weui-cell weui-cell_vcode">
+				<div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="number" name="captcha" placeholder="请输入验证码"/>
+				</div>
+				<div class="weui-cell__ft">
+					<img class="weui-vcode-img" src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?d='+Math.random();" alt="验证码" title="点击更换"/>
+				</div>
+			</div>
+			
+			<div class="weui-cell">
+				<button type="submit" class="weui-btn weui-btn_primary">登陆</button>
+			</div>
+
+			<div class="weui-cell">
+				<p class="page__desc">&copy;2016 {$_SERVER['HTTP_HOST']} 版权所有</p>
+			</div>
+		</form>
+	
+		</div>
+		
+
+
+	</div>
+
+</div>
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+
+
+
+<script src="/static/admin/js/index.js"></script>
+
+{/block}

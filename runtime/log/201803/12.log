@@ -1,0 +1,14 @@
+[ 2018-03-12T19:25:57+08:00 ] 10.0.0.249 183.136.190.62 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.047704s][吞吐率：20.96req/s] [内存消耗：2,934.16kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001529s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000376s ]
+
+---------------------------------------------------------------
+[ 2018-03-12T21:52:40+08:00 ] 10.0.0.249 106.11.227.189 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.047834s][吞吐率：20.91req/s] [内存消耗：2,934.20kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001052s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000409s ]
+
+---------------------------------------------------------------

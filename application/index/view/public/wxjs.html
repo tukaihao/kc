@@ -1,0 +1,62 @@
+
+{if condition="$is_mobile"}
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+
+	
+
+    $.getJSON('<?php echo \think\Url::build('api/sign');?>?url=' + encodeURIComponent(location.href.split('#')[0]), function (msg) {
+
+		var res = msg.data;
+		var _hideMenu = "{$wx_option['hideMenu']}";
+		var _jsApiList = [];
+		if(!_hideMenu){
+			_jsApiList=  [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'onMenuShareQZone'
+            ];
+		}
+        wx.config({
+            debug: false,
+            appId: res.appId,
+            timestamp: res.timestamp,
+            nonceStr: res.nonceStr,
+            signature: res.signature,
+            jsApiList:_jsApiList
+        });
+
+		wx.error(function (res) {
+		 // alert(res.errMsg);
+		});
+        wx.ready(function () {
+			
+			if(_hideMenu){
+				wx.hideOptionMenu();
+			}else
+			{
+				var option = {
+					title:"{$wx_option['title']}",
+					desc:"{$wx_option['desc']}",
+					link: "{$wx_option['link']}" || location.href,
+					imgUrl: "{$wx_option['imgUrl']}",
+					success: function () {},
+					cancel: function () {}
+				};
+				wx.onMenuShareAppMessage(option);
+				wx.onMenuShareTimeline(option);
+				wx.onMenuShareQQ(option);
+				wx.onMenuShareWeibo(option);
+				wx.onMenuShareQZone(option);
+			}
+        });
+    });
+
+
+});
+
+</script>
+{/if}

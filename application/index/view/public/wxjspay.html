@@ -1,0 +1,118 @@
+
+{if condition="$is_mobile"}
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+
+	
+
+    $.getJSON('<?php echo \think\Url::build('api/sign');?>?url=' + encodeURIComponent(location.href.split('#')[0]), function (msg) {
+
+		var res = msg.data;
+		var _hideMenu = "{$wx_option['hideMenu']}";
+		var _jsApiList = ['chooseWXPay'];
+
+        wx.config({
+            debug: false,
+            appId: res.appId,
+            timestamp: res.timestamp,
+            nonceStr: res.nonceStr,
+            signature: res.signature,
+            jsApiList:_jsApiList
+        });
+		wx.error(function (res) {
+		 // alert(res.errMsg);
+		});
+        wx.ready(function () {
+			
+			if(_hideMenu){
+				wx.hideOptionMenu();
+			}
+
+			/*jspay*/
+			$("#btn-order-pay").on('click',function(){
+				/*保存收货人*/
+				if(_is_kuaidi=='1')
+				{
+					var _order_data = {
+						"is_kuaidi":_is_kuaidi,
+						"realname":$("#order-realname").val(),
+						"tel":$("#order-tel").val(),
+						"address":$("#order-address_trigger").val(),
+						"address_detail":$("#order-address_detail").val(),
+						"remark":$("#order-remark").val()
+					};
+					if(!_order_data.realname){
+						_ppsao.toast("姓名错误", "forbidden");
+						return false;
+					}else if(!_order_data.tel){
+						_ppsao.toast("手机号码错误", "forbidden");
+						return false;
+					}else if(!_order_data.tel){
+						_ppsao.toast("收货地址错误", "forbidden");
+						return false;
+					}else if(!_order_data.tel){
+						_ppsao.toast("地址详细错误", "forbidden");
+						return false;
+					}
+				}else{
+					var _order_data = {
+						"is_kuaidi":_is_kuaidi,
+						"remark":$("#order-remark").val()
+					};
+				}
+				
+				var pay_check = "{$pay_check_url}",save_order = "{$save_order_url}",orderid = "{$out_trade_no}";
+				
+				_ppsao.showLoading('正在下单...');
+
+				_order_data.orderid = orderid;
+				$.post(save_order,_order_data,function(rs){
+					_ppsao.hideLoading();
+					if(rs.status==1){	
+								wx.chooseWXPay({
+										 timestamp:{$jsApiParameters.timestamp},
+										 nonceStr:"{$jsApiParameters.nonceStr}",
+										 package:"{$jsApiParameters.package}",
+										 signType:"MD5",
+										 paySign:"{$jsApiParameters.paySign}",
+										 success: function (res) {
+											// 支付成功后的回调函数
+											_ppsao.showLoading('支付确认...');
+											$.post(pay_check,{"orderid":orderid,"is_kuaidi":_is_kuaidi},function(rs){
+												_ppsao.hideLoading();
+												if(rs.status==1){	
+													location.href = rs.url || "/";
+													return false;
+												}else{
+													_ppsao.toast(rs.msg, "forbidden");
+												}
+											},"json");
+
+										}
+								  });
+
+					}else{
+						_ppsao.toast(rs.msg, "forbidden");
+					}
+				},"json");
+
+
+				
+
+
+
+
+
+
+			  });
+
+
+        });
+    });
+
+
+});
+
+</script>
+{/if}

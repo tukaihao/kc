@@ -1,0 +1,202 @@
+{extend name="public/base_admin" /}
+
+{block name="title"}
+        <title>{$settings['name']|default='快查云平台'}</title>
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+{/block}
+{block name="head"}
+<style>
+
+	
+</style>
+{/block}<!--end head-->
+
+{block name="body"}
+
+
+	<div class="weui-panel">
+		<div class="weui-panel__hd">设备码功能</div>
+		<div class="weui-panel__bd">
+			<div class="weui-media-box weui-media-box_text">
+				<ul class="weui-media-box__info">
+					<li class="weui-media-box__info__meta"><a href="<?php echo \think\Url::build('wenan/edit');?>" target="_blank">添加设备码</a></li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('wenan/cat');?>">分类管理</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<div class="weui-panel">
+		
+		<form id="page_form" method="get">
+		<input type="submit" class="hide"/>
+		<div class="weui-flex">
+			<div class="weui-flex__item">
+				<div class="weui-cells weui-cells_form mt0">
+					<div class="weui-search-bar" id="search_bar">
+						
+							<div class="weui-search-bar__box">
+								<i class="weui-icon-search"></i>
+								<input type="search" class="weui-search-bar__input" id="search_input" name="kwd" value="{$kwd}" placeholder="搜索" />
+								<a href="javascript:" class="weui-icon-clear" id="search_clear"></a>
+							</div>
+					
+						<a href="javascript:" class="weui-search-bar__cancel-btn" id="search_cancel">取消</a>
+					</div>
+				</div>
+			</div>
+			
+
+			
+
+			<div class="weui-flex__item">
+				<div class="weui-cells weui-cells_form mt0">
+				<div class="weui-cell weui-cell_select weui-cell_select-after">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">选择分类</label>
+					</div>
+					<div class="weui-cell__bd">
+						<select class="weui-select" name="cat_id">
+							<option value="0">--选择分类--</option>
+							{volist name="cat_arr" id="vo"}
+							<option value="{$vo['id']}" {if condition="$cat_id eq $vo['id']"}selected="true"{/if}>{$vo['catname']}</option>
+							{if condition="!empty($vo['_child'])"}
+								{volist name="vo._child" id="vo2"}
+								<option value="{$vo2['id']}" {if condition="$cat_id eq $vo2['id']"}selected="true"{/if}>&nbsp;&nbsp;&nbsp;&nbsp;|-- {$vo2['catname']}</option>
+								{/volist}
+							{/if}
+							{/volist}
+						</select>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="weui-flex__item">
+				<div class="weui-cells weui-cells_form mt0">
+						<div class="weui-cell weui-cell_vcode">
+							<div class="weui-cell__hd">
+								<label class="weui-label">每页显示</label>
+							</div>
+							<div class="weui-cell__bd">
+								<input class="weui-input" type="number" name="pagesize" value="{$pagesize}" placeholder="每页显示数据">
+							</div>
+							<div class="weui-cell__ft">
+								<a href="javascript:void(0);" onclick="page_form.submit();" class="weui-vcode-btn" type="submit">确定</a>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			
+			
+
+		</div>
+		</form>
+		
+
+
+		<div class="weui-panel__hd">设备码列表</div>
+		<div class="weui-panel__bd">
+
+			{volist name='list' id='vo'}
+			<div class="weui-media-box weui-media-box_text" id="list-item-{$vo.id}">
+
+				<h4 class="weui-media-box__title">{$vo['title']}</h4>
+				<p class="weui-media-box__desc">{:msubstr(strip_tags(htmlspecialchars_decode($vo['intro'])),0,80)}</p>
+
+				<ul class="weui-media-box__info">
+					<li class="weui-media-box__info__meta">扫描{$vo.views2}次 ，故障{$vo.likes2}次</li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra">{$vo.dateline|date="Y-m-d H:i",###}</li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('/index/wenan/view','id='.$vo['id']);?>" target="_blank">预览</a></li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="javascript:void(0);" class="list-qrcode" data-view="<?php echo \think\Url::build('/index/wenan/view',array('id'=>$vo['id']),'.html',true); ?>" data-qrcode="{$vo['qrcode']}">预览二维码</a></li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('wenan/edit','id='.$vo['id']);?>" target="_blank">编辑</a></li>
+					<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="javascript:void(0);" class="list-del" data-id="{$vo['id']}">删除</a></li>
+				</ul>
+			</div>
+			{/volist}
+
+
+		</div>
+		<div class="weui-panel__bd"><div class="pager">{$list->render()}</div></div>
+
+	</div> 
+
+
+<div id="dialog_qrcode" style="display:none;">
+	<div class="weui-mask"></div>
+	<div class="weui-dialog">
+		<div class="weui-dialog__hd"><strong class="weui-dialog__title">扫一扫</strong></div>
+		<div class="weui-dialog__bd"><img class="qrcode_img" src="/static/images/qrcode.png" style="max-width:250px;"/></div>
+		<div class="weui-dialog__ft">
+			<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">关闭</a>
+			<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary" target="_blank">美化二维码</a>
+		</div>
+	</div>
+</div>
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+
+<script>
+$(function(){
+	$(".list-qrcode").click(function(){
+
+		var _qrcode = $(this).attr("data-qrcode");
+		var _view = $(this).attr("data-view");
+
+		var $dialog = $('#dialog_qrcode');
+		$dialog.find('.qrcode_img').attr("src",_qrcode);
+		$dialog.fadeIn(100);
+		$dialog.find('.weui-dialog__btn_default').one('click', function () {
+			$dialog.fadeOut(100);
+			return false;
+		});
+		$dialog.find('.weui-dialog__btn_primary').one('click', function () {
+			$(this).attr("href","http://www.mobanma.com/qr.html?text="+_view);
+			return true;
+		});
+	});
+
+
+
+	$(".list-del").click(function(){
+		var _id = $(this).attr("data-id");
+
+		if(confirm("你确定删除吗?"))
+		{
+			_ppsao.showLoading("正在删除");
+			$.ajax({
+				   type: "POST",
+				   url: "<?php echo \think\Url::build('del');?>",
+				   data: {id:_id},
+				   dataType:"json",
+				   success: function(data){
+					   _ppsao.hideLoading();
+					   if(data.status ==1)
+					   {
+						   $("#list-item-"+_id).remove();
+							_ppsao.toast(data.msg);
+
+					   }else{
+							_ppsao.toast(data.msg, "forbidden");
+					   }
+					  
+				   },
+				   error:function(){
+						_ppsao.hideLoading();
+						_ppsao.toast("请求失败，请重试", "forbidden");
+				   }
+			});
+		}
+	});
+});
+</script>
+
+{/block}

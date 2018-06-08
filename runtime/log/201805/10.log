@@ -1,0 +1,261 @@
+[ 2018-05-10T07:55:06+08:00 ] 10.0.0.249 106.11.225.207 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.050516s][吞吐率：19.80req/s] [内存消耗：2,934.19kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001332s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001249s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000447s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:22:26+08:00 ] 10.0.0.249 117.136.88.242 GET /index/wenan/view.html?id=290
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=290 [运行时间：0.121508s][吞吐率：8.23req/s] [内存消耗：3,493.44kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001418s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001530s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 290  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000927s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 290  AND `is_del` = 0     [ RunTime:0.057742s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:22:27+08:00 ] 10.0.0.249 117.136.88.242 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D290
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D290 [运行时间：0.366098s][吞吐率：2.73req/s] [内存消耗：3,888.88kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000958s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001567s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:22:28+08:00 ] 10.0.0.249 117.136.88.242 GET /index/wenan/view.html?id=61
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=61 [运行时间：0.103829s][吞吐率：9.63req/s] [内存消耗：3,484.77kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001228s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001651s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 61  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000695s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 61  AND `is_del` = 0     [ RunTime:0.045072s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:22:29+08:00 ] 10.0.0.249 117.136.88.242 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D61
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D61 [运行时间：0.059193s][吞吐率：16.89req/s] [内存消耗：3,888.77kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001350s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000442s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:23:26+08:00 ] 10.0.0.249 61.151.225.192 GET /index/wenan/view.html?id=290
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=290 [运行时间：0.112858s][吞吐率：8.86req/s] [内存消耗：3,492.80kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 290  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000783s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 290  AND `is_del` = 0     [ RunTime:0.052597s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:23:31+08:00 ] 10.0.0.249 61.151.226.67 GET /index/wenan/view.html?id=61
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=61 [运行时间：0.120588s][吞吐率：8.29req/s] [内存消耗：3,483.93kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001499s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 61  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000870s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 61  AND `is_del` = 0     [ RunTime:0.060408s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:24:12+08:00 ] 10.0.0.249 123.151.76.158 GET /index/wenan/view.html?id=385
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=385 [运行时间：0.122764s][吞吐率：8.15req/s] [内存消耗：3,471.97kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001303s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001203s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 385  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000817s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 385  AND `is_del` = 0     [ RunTime:0.060782s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:24:13+08:00 ] 10.0.0.249 123.151.76.158 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D385
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D385 [运行时间：0.060866s][吞吐率：16.43req/s] [内存消耗：3,889.14kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001301s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000415s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:24:40+08:00 ] 10.0.0.249 61.151.178.171 GET /index/wenan/view.html?id=322
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=322 [运行时间：0.120273s][吞吐率：8.31req/s] [内存消耗：3,470.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000989s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001505s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 322  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000815s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 322  AND `is_del` = 0     [ RunTime:0.061336s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:24:41+08:00 ] 10.0.0.249 61.151.178.171 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D322
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D322 [运行时间：0.056951s][吞吐率：17.56req/s] [内存消耗：3,889.19kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001180s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001466s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000453s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:25:10+08:00 ] 10.0.0.249 61.151.225.179 GET /index/wenan/view.html?id=385
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=385 [运行时间：0.113626s][吞吐率：8.80req/s] [内存消耗：3,471.32kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001235s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001340s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 385  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000681s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 385  AND `is_del` = 0     [ RunTime:0.054698s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:25:13+08:00 ] 10.0.0.249 61.151.178.171 GET /index/wenan/view.html?id=450
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=450 [运行时间：0.114539s][吞吐率：8.73req/s] [内存消耗：3,440.46kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001751s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 450  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000839s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 450  AND `is_del` = 0     [ RunTime:0.059155s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:25:14+08:00 ] 10.0.0.249 61.151.178.171 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D450
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D450 [运行时间：0.061121s][吞吐率：16.36req/s] [内存消耗：3,889.19kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001347s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000285s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:25:17+08:00 ] 10.0.0.249 61.151.178.171 GET /index/wenan/view.html?id=322
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=322 [运行时间：0.112025s][吞吐率：8.93req/s] [内存消耗：3,470.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001483s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 322  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000797s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 322  AND `is_del` = 0     [ RunTime:0.055351s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:25:17+08:00 ] 10.0.0.249 61.151.178.171 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D322
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D322 [运行时间：0.056370s][吞吐率：17.74req/s] [内存消耗：3,889.19kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001088s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:01+08:00 ] 10.0.0.249 117.136.88.242 GET /index/wenan/view.html?id=386
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=386 [运行时间：0.114742s][吞吐率：8.72req/s] [内存消耗：3,474.70kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001320s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 386  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000720s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 386  AND `is_del` = 0     [ RunTime:0.056551s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:01+08:00 ] 10.0.0.249 117.136.88.242 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D386
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D386 [运行时间：0.058032s][吞吐率：17.23req/s] [内存消耗：3,888.55kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000369s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:06+08:00 ] 10.0.0.249 61.151.178.171 GET /index/wenan/view.html?id=308
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=308 [运行时间：0.112637s][吞吐率：8.88req/s] [内存消耗：3,472.37kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 308  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000745s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 308  AND `is_del` = 0     [ RunTime:0.054036s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:07+08:00 ] 10.0.0.249 61.151.178.171 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D308
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D308 [运行时间：0.056098s][吞吐率：17.83req/s] [内存消耗：3,889.19kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001261s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000360s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:13+08:00 ] 10.0.0.249 101.226.79.226 GET /index/wenan/view.html?id=450
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=450 [运行时间：0.117445s][吞吐率：8.51req/s] [内存消耗：3,439.79kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 450  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000759s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 450  AND `is_del` = 0     [ RunTime:0.057781s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:53+08:00 ] 10.0.0.249 117.136.88.242 GET /index/wenan/view.html?id=446
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=446 [运行时间：0.117884s][吞吐率：8.48req/s] [内存消耗：3,471.89kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001307s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 446  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000799s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 446  AND `is_del` = 0     [ RunTime:0.058966s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:26:54+08:00 ] 10.0.0.249 117.136.88.242 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D446
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D446 [运行时间：0.058859s][吞吐率：16.99req/s] [内存消耗：3,888.55kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001134s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001488s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000428s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:27:00+08:00 ] 10.0.0.249 61.151.226.156 GET /index/wenan/view.html?id=386
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=386 [运行时间：0.136591s][吞吐率：7.32req/s] [内存消耗：3,474.07kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001066s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001311s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 386  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000752s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 386  AND `is_del` = 0     [ RunTime:0.080471s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:27:52+08:00 ] 10.0.0.249 61.151.226.168 GET /index/wenan/view.html?id=446
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=446 [运行时间：0.119096s][吞吐率：8.40req/s] [内存消耗：3,471.30kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001043s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001443s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 446  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000823s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 446  AND `is_del` = 0     [ RunTime:0.060683s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:29:21+08:00 ] 10.0.0.249 123.151.77.71 GET /index/wenan/view.html?id=290
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=290 [运行时间：0.117935s][吞吐率：8.48req/s] [内存消耗：3,493.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001316s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 290  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000815s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 290  AND `is_del` = 0     [ RunTime:0.057337s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:29:22+08:00 ] 10.0.0.249 123.151.77.71 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D290
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D290 [运行时间：0.056255s][吞吐率：17.78req/s] [内存消耗：3,889.19kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001006s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T10:30:21+08:00 ] 10.0.0.249 101.227.132.28 GET /index/wenan/view.html?id=290
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=290 [运行时间：0.106612s][吞吐率：9.38req/s] [内存消耗：3,492.97kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001146s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001555s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 290  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000812s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 290  AND `is_del` = 0     [ RunTime:0.047424s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T11:08:24+08:00 ] 10.0.0.249 183.136.190.62 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.047730s][吞吐率：20.95req/s] [内存消耗：2,934.17kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001362s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2018-05-10T17:38:38+08:00 ] 10.0.0.249 106.11.157.236 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.048642s][吞吐率：20.56req/s] [内存消耗：2,934.00kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001131s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001507s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000374s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+{block name="title"}
+    <title>快查云平台</title>
+    <meta name="keyword" content="快查云平台">
+    <meta name="description" content="快查云平台">
+{/block}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+    {block name="head"}<!--head  style or js -->{/block}
+ </head>
+<body ontouchstart>
+
+
+{block name="body"}<!--主体内容-->{/block}
+
+<script src="/static/js/jquery-1.8.2.min.js"></script>
+{block name="footer_js"}<!--footer js -->{/block}
+
+{include file="public:wxjs"/}
+{include file="public:tongji"/}
+
+</body>
+</html>

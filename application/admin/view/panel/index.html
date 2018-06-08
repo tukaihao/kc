@@ -1,0 +1,49 @@
+{extend name="public/base_admin" /}
+
+{block name="title"}
+        <title>{$settings['name']|default='快查云平台'}</title>
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+{/block}
+{block name="head"}
+<style>
+
+	
+</style>
+{/block}<!--end head-->
+
+{block name="body"}
+
+
+	<div class="weui-panel">
+		<div id="ppsao_info">
+			<div class="weui-panel__hd">快查云平台介绍</div>
+			<div class="weui-panel__bd">
+				<div class="weui-media-box weui-media-box_text">
+					<h4 class="weui-media-box__title">版本V1.0</h4>
+					<p class="weui-media-box__desc">快查使用微信weui界面，欢迎使用。</p>
+					<br/>
+					<p class="weui-media-box__desc"></p>
+					<ul class="weui-media-box__info">
+						<li class="weui-media-box__info__meta">nbtv.com.cn</li>
+						<li class="weui-media-box__info__meta">2017.6.1</li>
+						<li class="weui-media-box__info__meta weui-media-box__info__meta_extra">沈</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--<div id="ppsao_news"><!--请不要删除这里，否则不能得到更新提示，责任自负</div>-->
+	</div> 
+
+
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+
+<!--请不要删除这里，否则不能得到更新提示，责任自负
+<script src="http://www.ppsao.com/os/news.html?cid=13783821&view=ppsao_news"></script>
+请不要删除这里，否则不能得到更新提示，责任自负-->
+
+{/block}

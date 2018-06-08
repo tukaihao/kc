@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+{block name="title"}
+    <title>设备码</title>
+    <meta name="keyword" content="二维码生成器,模板码,半色调二维码,GIF指纹二维码,地图二维码,二维码模板,彩色二维码,美化二维码">
+    <meta name="description" content="模板码二维码生成器，可以生成GIF、指纹、半色调、地图、彩色，图片组合等先进的二维码，具有独特的设计元素十分漂亮。">
+{/block}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/weui/dist/style/weui.css"/>
+	<link rel="stylesheet" href="/static/jquery-weui/dist/css/jquery-weui.css" >
+    <link rel="stylesheet" href="/static/admin/css/style.css"/>
+    {block name="head"}<!--head  style or js -->{/block}
+ </head>
+<body ontouchstart>
+
+<div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+
+
+<div class="weui-flex ppsao-com">
+	<div class="weui-flex__item">
+
+
+		<div class="weui-panel">
+            <div class="weui-panel__hd">
+					<ul class="right">
+                        <li class="weui-media-box__info__meta">{$_user['email']}</li>
+						<li class="weui-media-box__info__meta"><a href="<?php echo \think\Url::build('/Admin/panel/userinfo');?>">修改资料</a></li>
+
+						{if condition="$_user['id'] eq 1"}
+
+                        <li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('/Admin/panel/setting');?>">系统设置</a></li>
+						<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('/Admin/panel/userlist');?>">管理员</a></li>
+
+						{/if}
+						<li class="weui-media-box__info__meta weui-media-box__info__meta_extra"><a href="<?php echo \think\Url::build('/Admin/index/off');?>">退出登陆</a></li>
+                    </ul>
+					{$settings['name']|default='快查云平台'} - 管理中心
+					</div>
+        </div>
+
+	
+
+
+<div class="weui-row">
+		<div class="weui-col-20">
+
+			<div class="weui-panel">
+				<div class="weui-panel__hd">管理菜单</div>
+				<div class="weui-panel__bd">
+					<div class="weui-media-box weui-media-box_small-appmsg">
+						<div class="weui-cells">
+							<a class="weui-cell weui-cell_access {if condition="$_controller eq 'panel'"}cell_active{/if}"  href="<?php echo \think\Url::build('panel/index');?>">
+								<div class="weui-cell__hd"><img src="/static/images/panel.png" style="width:20px;margin-right:5px;display:block"></div>
+								<div class="weui-cell__bd weui-cell_primary">
+									<p>主页</p>
+								</div>
+								<span class="weui-cell__ft"></span>
+							</a>
+						
+						
+							<a class="weui-cell weui-cell_access {if condition="$_controller eq 'wenan'"}cell_active{/if}"  href="<?php echo \think\Url::build('wenan/index');?>">
+								<div class="weui-cell__hd"><img src="/static/images/wenan.png"  style="width:20px;margin-right:5px;display:block"></div>
+								<div class="weui-cell__bd weui-cell_primary">
+									<p>设备码</p>
+								</div>
+								<span class="weui-cell__ft"></span>
+							</a>
+							
+							
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+	
+	
+	</div>
+	<div class="weui-col-80">
+			<div class="container" id="container">
+			
+{block name="body"}<!--主体内容-->{/block}
+
+			</div>
+
+	</div>
+	
+</div>
+
+
+
+
+	</div>
+	
+</div>
+
+<div class="weui-msg__extra-area">
+	<div class="weui-footer">
+		<p class="weui-footer__text">{$settings.copyright}</p>
+	</div>
+</div>
+
+
+<!--BEGIN toast-->
+<div id="toast" style="display: none;">
+	<div class="weui-mask_transparent"></div>
+	<div class="weui-toast">
+		<i class="weui-icon-cancel weui-icon-cancel-no-circle weui-icon_toast"></i>
+		<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+		<p class="weui-toast__content">已完成</p>
+	</div>
+</div>
+<!--end toast-->
+
+<!-- loading toast -->
+<div id="loadingToast" style="display:none;">
+	<div class="weui-mask_transparent"></div>
+	<div class="weui-toast">
+		<i class="weui-loading weui-icon_toast"></i>
+		<p class="weui-toast__content">数据加载中</p>
+	</div>
+</div>
+
+
+
+
+<script src="/static/js/jquery-1.8.2.min.js"></script>
+<!-- script src="/static/weui/dist/js/zepto.min.js"></script -->
+<!-- script src="/static/jquery-weui/dist/js/jquery-weui.js"></script>
+<script src="/static/weui/dist/js/router.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script -->
+<script>
+	var _ppsao = {
+		
+		showLoading : function(str){
+			if(!str) str = "数据加载中";
+			var $loadingToast = $('#loadingToast');
+			if ($loadingToast.css('display') != 'none') {
+				return;
+			}
+			$loadingToast.find(".weui-toast__content").text(str);
+			$loadingToast.fadeIn(100);
+		},hideLoading : function(){
+			var $loadingToast = $('#loadingToast');
+			$loadingToast.fadeOut(100);
+		},toast:function(str,ac){
+			if(!str) str = "已完成";
+			var $toast = $('#toast');
+
+			$toast.find(".weui-toast__content").text(str);
+			
+			var s = 1000;
+			if(ac == 'forbidden'){
+				s = 2000;
+				$toast.find(".weui-icon-cancel-no-circle").show();
+				$toast.find(".weui-icon-success-no-circle").hide();
+			}else{
+				$toast.find(".weui-icon-cancel-no-circle").hide();
+				$toast.find(".weui-icon-success-no-circle").show();
+			}
+			if ($toast.css('display') != 'none') {
+				return;
+			}
+			
+			$toast.fadeIn(100);
+			setTimeout(function () {
+				$toast.fadeOut(100);
+			}, s);
+
+		}
+	};
+
+</script>
+{block name="footer_js"}<!--footer js -->{/block}
+{include file="public:tongji"/}
+
+</body>
+</html>

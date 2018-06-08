@@ -1,0 +1,770 @@
+[ 2017-09-29T10:24:30+08:00 ] 10.0.0.249 220.189.193.13 GET /admin
+[ log ] kc.nbtv.cn/admin [运行时间：0.047230s][吞吐率：21.17req/s] [内存消耗：3,073.20kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001084s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000491s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:24:38+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.115554s][吞吐率：8.65req/s] [内存消耗：3,551.66kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001315s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `email` = 'sl@nbtv.com.cn'  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000690s ]
+[ sql ] [ SQL ] UPDATE `ppsao_admin`  SET `username`='',`lasttime`=1506651878,`lastip`='220.189.193.13',`logins`=logins+1  WHERE  `id` = 3       [ RunTime:0.051073s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:24:39+08:00 ] 10.0.0.249 220.189.193.13 GET /Admin/panel.html
+[ log ] kc.nbtv.cn/Admin/panel.html [运行时间：0.054241s][吞吐率：18.44req/s] [内存消耗：3,384.87kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001295s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000273s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:24:41+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.065377s][吞吐率：15.30req/s] [内存消耗：3,815.84kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001063s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000252s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:24:44+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html
+[ log ] kc.nbtv.cn/admin/wenan/edit.html [运行时间：0.058350s][吞吐率：17.14req/s] [内存消耗：3,462.50kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001256s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001130s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000470s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:24:44+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html
+[ log ] kc.nbtv.cn/admin/wenan/edit.html [运行时间：0.058018s][吞吐率：17.24req/s] [内存消耗：3,462.35kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001575s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000381s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:24:44+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.049297s][吞吐率：20.29req/s] [内存消耗：3,337.80kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001256s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000517s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:24+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.143434s][吞吐率：6.97req/s] [内存消耗：4,500.49kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001614s ]
+[ sql ] [ SQL ] INSERT INTO `ppsao_wenan` (`uid` , `title` , `content` , `intro` , `author` , `cover` , `catid` , `rhref` , `rhref_text` , `is_show_title` , `is_show_statis` , `is_vip` , `views` , `likes` , `is_tmp` , `updatetime` , `dateline`) VALUES (3 , '十九大期间电视播出的安全播出应急预案' , '&lt;p style=&quot;margin-top:10px;margin-right:1px;margin-bottom:0;margin-left:43px;margin-bottom:0;text-align:center;line-height:110%;vertical-align:baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:21px;line-height: 110%;font-family:宋体&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:32px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family:宋体&quot;&gt;1&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family: 宋体&quot;&gt;、直播或转播期间，信号源出现非法内容或其它突发情况时应急处理办法：&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;1.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播信号中出现非法声音、图像或字幕时，应立即切断该信号源，播出垫片。 &lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;1.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时、若信号被干扰或出现黑场时，应选择未被干扰的备路信号切出，若主备路均受干扰或出现黑场，立即切垫片。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;1.3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时信号受气象等自然因素影响，画面出现严重马赛克、黑场等情况，技术人员应立即采取必要措施，设法用较好的信号播出。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;1.4&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、应急处理后，立即向本部门主任汇报。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;1.5&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;、十九大期间，重点关注包括针对十九大的非法声音、图像或字幕的内容。&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:32px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family: 宋体&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:32px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family: 宋体&quot;&gt;2&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family: 宋体&quot;&gt;、标清系统播出节目或节目单不能及时到达的应急处理办法&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;2.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当节目单因网络原因无法按时传到播出机房时，应立即通知总编室相关人员用机房专用U盘直接拷贝，然后在播出机房的编单机上直接编单。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;2.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出隐患时，采用应急上载的方式上载节目素材。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;2.3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出事故时，在播出时间前5分钟做好应急录像机播出的准备工作，并与总编室联系节目单的修改措施。送带人应进入播出机房，确定节目片头画面，待播出结束之后方可离开。播出员应严格按照修改后的节目单执行。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;在播出时间前5-10分钟送达上载机房的磁带的处理详见《播出上载约定》。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;2.4&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因光缆中断无法按时传送到广告缓存区时，广告中心将以移动硬盘将素材送到上载机房，上载人员立即采用本地广告传输的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;2.5&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因网关故障无法按时传送到广告缓存区时，广告中心将以磁带的形式将素材送到上载机房，上载人员立即采用磁带上载的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;2.6&lt;/span&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;、十九大期间播出及上载人员应重点关注有关十九大的报道节目，在应急处理的时候应重点保障此类节目的应急播出。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;2.7&lt;/span&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;、关于十九大的各类宣传片应给与重点统一保管，以备应急使用。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:32px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family:宋体&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:32px;margin-bottom:0;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family:宋体&quot;&gt;3、&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height: 110%;font-family:宋体&quot;&gt;标清系统播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-left:28px;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上PGM和控制台上的PGM中只有一个有信号，另一个无信号时，立即通知技术人员，更换相应的输出分配板。&lt;strong&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-left:28px;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的PGM都无信号，BYPASS有信号时，说明主播出板故障，立即切BYPASS键，由备播出板输出信号。当主备播出板都有故障时,马上通过跳线从测试信号(黄色跳线口)把相应信号源跳出。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-left:28px;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的PGM都无信号，BYPASS也无信号时，立即手动切换垫片信号，然后查看信号源监视器的情况，分别进行以下操作:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp; 3.3.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;：当视频服务器信号播出时，主通道无信号，备通道有信号，立即手动切到备通道，准备磁带跟播。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp; 3.3.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;：现场直播时主信号故障，备信号正常时，立即手动切到备信号。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.4&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载存储器无法向播出存储器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.5&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当主备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-left:28px;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.6&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;3.7&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;当切换台上的BYPASS键切换失灵时，应在主切换器对应频道的播出板上手动拨BYPASS开关。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-right:1px;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-right:1px;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family:宋体&quot;&gt;4&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;line-height:110%;font-family: 宋体&quot;&gt;、高清播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上1-HD-M、1-HD-B信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-HD-M和1-HD-B一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-HD-M和1-HD-B都无信号，观察到HD-1无信号，HD-2信号正常，立即手动切至HD-2。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-HD-M和1-HD-B都无信号，观察到HD-1和HD-2无信号、HD-3信号正常，立即手动切至HD-3。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.4&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-HD-M和1-HD-B都无信号，观察到HD-1、HD-2、HD-3均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上1-SD-M、1-SD-B信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.1&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-SD-M和1-SD-B一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.2&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-SD-M和1-SD-B都无信号，观察到SD-1无信号，SD-2信号正常，立即手动切至SD-2。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.1.3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-SD-M和1-SD-B都无信号，观察到SD-1和SD-2无信号、HD-3信号正常，立即手动切至SD-3。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 4.1.4&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、若1-SD-M和1-SD-B都无信号，观察到SD-1、SD-2、SD-3均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当主、备、二备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.4&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载服务器无法向播出服务器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-left:28px;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;4.5&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-left:28px;text-align:left;line-height:110%;vertical-align: baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;font-family: 宋体&quot;&gt;5&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;font-family:宋体&quot;&gt;．供配电故障的应急处理办法&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体&quot;&gt;5.1&lt;/span&gt;&lt;span style=&quot;;font-family:宋体&quot;&gt;、当配电柜中有空开等故障引起多只插座没电时，应立即将相关的设备电源线接到正常的插座上，或者通过应急接线板转接。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体&quot;&gt;5.2&lt;/span&gt;&lt;span style=&quot;;font-family:宋体&quot;&gt;、 当UPS供电发生故障时,应把单电源供电的设备(电源线上有特殊标志)接至市电一路。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-size:16px;font-family: 宋体;color:blue&quot;&gt;6&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 16px;font-family:宋体;color:blue&quot;&gt;、加强各项保障预案&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;6.1&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;：加强人员保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;font-family:宋体;color:blue&quot;&gt;十九大期间&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;确保24小时部门领导和全体技术人员的通讯畅通。加强晚间重要直播时段的值班力量，领导加强一线值班，随时应对应急事件和各类应急播出。加强待岗技术人员的数量，包括晚间10点后，如果有应急需要，随时延长。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;6.2&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;、加强播出技术的保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;随时准备配合总编室变更节目单，为有可能的直播或转播做准备。加强巡查总控调度和播控运行的情况，排除故障隐患。检查有可能使用的各路直播信号，确保光缆及卫星信号的正常。加强巡查GPS及北斗时钟天线及通道，确保正常。加强巡查播出机房到华数机房的光缆通道，确保正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;6.3&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;、加强电力及空调保障的应对措施：当外电断电时，机房在UPS供电的情况下，积极配合行政安保部门对UPS用电的管理和调度。当楼层或机房空调出现故障时，采用各种补充手段保证机房温度正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;6.4&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;color:blue&quot;&gt;、严格执行每日“零汇报”制度。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;strong&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;电视技术中心播出部&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:1px;margin-bottom:0;margin-left:28px;margin-bottom:0;text-align:left;line-height:110%;vertical-align:baseline&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2017&lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;年9月&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;' , '' , '' , '' , 21 , '' , '阅读原文' , 1 , 1 , 1 , 0 , 0 , 0 , 1506651924 , 1506651840)                   [ RunTime:0.048500s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `qrcode`='/uploads/record/2017/09/29/201709291025243392HriQCZ.png',`updatetime`=1506651924  WHERE  `id` = 331      [ RunTime:0.038113s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:28+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.179031s][吞吐率：5.59req/s] [内存消耗：3,520.80kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001174s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001350s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001338s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000857s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.120555s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:35+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.086006s][吞吐率：11.63req/s] [内存消耗：3,477.58kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001628s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000839s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.028018s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:36+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.394463s][吞吐率：2.54req/s] [内存消耗：3,889.20kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001118s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001348s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000416s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:52+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.068204s][吞吐率：14.66req/s] [内存消耗：3,799.47kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001208s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001625s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001355s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:54+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.064100s][吞吐率：15.60req/s] [内存消耗：3,535.44kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001248s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001648s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000302s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:54+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.057791s][吞吐率：17.30req/s] [内存消耗：3,535.45kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001057s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001296s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:25:54+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.043978s][吞吐率：22.74req/s] [内存消耗：3,337.40kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000640s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:26:56+08:00 ] 10.0.0.249 101.226.125.121 GET /index/wenan/view.html?id=59
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=59 [运行时间：0.091467s][吞吐率：10.93req/s] [内存消耗：3,482.98kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001491s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001756s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 59  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000825s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 59  AND `is_del` = 0     [ RunTime:0.031773s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:26:57+08:00 ] 10.0.0.249 101.226.125.121 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D59
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D59 [运行时间：0.057261s][吞吐率：17.46req/s] [内存消耗：3,888.90kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001112s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001486s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000460s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:27:14+08:00 ] 10.0.0.249 117.185.27.115 GET /index/wenan/view.html?id=59
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=59 [运行时间：0.087766s][吞吐率：11.39req/s] [内存消耗：3,482.06kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001487s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001774s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 59  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000866s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 59  AND `is_del` = 0     [ RunTime:0.028562s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:08+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.071109s][吞吐率：14.06req/s] [内存消耗：3,673.44kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000839s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000538s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `uid`=3,`title`='十九大期间电视播出的安全播出应急预案',`content`='&lt;p&gt;1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播期间，信号源出现非法内容或其它突发情况时应急处理办法：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播信号中出现非法声音、图像或字幕时，应立即切断该信号源，播出垫片。&lt;/span&gt; &lt;/p&gt;&lt;p&gt;1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时、若信号被干扰或出现黑场时，应选择未被干扰的备路信号切出，若主备路均受干扰或出现黑场，立即切垫片。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时信号受气象等自然因素影响，画面出现严重马赛克、黑场等情况，技术人员应立即采取必要措施，设法用较好的信号播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、应急处理后，立即向本部门主任汇报。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.5&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间，重点关注包括针对十九大的非法声音、图像或字幕的内容。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;2&lt;span style=&quot;font-family:宋体&quot;&gt;、标清系统播出节目或节目单不能及时到达的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当节目单因网络原因无法按时传到播出机房时，应立即通知总编室相关人员用机房专用&lt;/span&gt;U&lt;span style=&quot;font-family:宋体&quot;&gt;盘直接拷贝，然后在播出机房的编单机上直接编单。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.2&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出隐患时，采用应急上载的方式上载节目素材。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出事故时，在播出时间前&lt;/span&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;分钟做好应急录像机播出的准备工作，并与总编室联系节目单的修改措施。送带人应进入播出机房，确定节目片头画面，待播出结束之后方可离开。播出员应严格按照修改后的节目单执行。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;在播出时间前&lt;/span&gt;5-10&lt;span style=&quot;font-family:宋体&quot;&gt;分钟送达上载机房的磁带的处理详见《播出上载约定》。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因光缆中断无法按时传送到广告缓存区时，广告中心将以移动硬盘将素材送到上载机房，上载人员立即采用本地广告传输的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因网关故障无法按时传送到广告缓存区时，广告中心将以磁带的形式将素材送到上载机房，上载人员立即采用磁带上载的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.6&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间播出及上载人员应重点关注有关十九大的报道节目，在应急处理的时候应重点保障此类节目的应急播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.7&lt;span style=&quot;font-family:宋体&quot;&gt;、关于十九大的各类宣传片应给与重点统一保管，以备应急使用。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;标清系统播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;中只有一个有信号，另一个无信号时，立即通知技术人员，更换相应的输出分配板。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;有信号时，说明主播出板故障，立即切&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键，由备播出板输出信号。当主备播出板都有故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;马上通过跳线从测试信号&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;黄色跳线口&lt;/span&gt;)&lt;span style=&quot;font-family: 宋体&quot;&gt;把相应信号源跳出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;也无信号时，立即手动切换垫片信号，然后查看信号源监视器的情况，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.1&lt;span style=&quot;font-family:宋体&quot;&gt;：当视频服务器信号播出时，主通道无信号，备通道有信号，立即手动切到备通道，准备磁带跟播。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.2&lt;span style=&quot;font-family:宋体&quot;&gt;：现场直播时主信号故障，备信号正常时，立即手动切到备信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载存储器无法向播出存储器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.6&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.7&lt;span style=&quot;font-family:宋体&quot;&gt;当切换台上的&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键切换失灵时，应在主切换器对应频道的播出板上手动拨&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;开关。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;4&lt;span style=&quot;font-family:宋体&quot;&gt;、高清播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当主、备、二备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载服务器无法向播出服务器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;．供配电故障的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当配电柜中有空开等故障引起多只插座没电时，应立即将相关的设备电源线接到正常的插座上，或者通过应急接线板转接。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.2&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt; &lt;span style=&quot;font-family:宋体&quot;&gt;当&lt;/span&gt;UPS&lt;span style=&quot;font-family: 宋体&quot;&gt;供电发生故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;应把单电源供电的设备&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;电源线上有特殊标志&lt;/span&gt;)&lt;span style=&quot;font-family:宋体&quot;&gt;接至市电一路。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;6&lt;span style=&quot;font-family:宋体&quot;&gt;、加强各项保障预案&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.1&lt;span style=&quot;font-family:宋体&quot;&gt;：加强人员保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;十九大期间确保&lt;/span&gt;24&lt;span style=&quot;font-family:宋体&quot;&gt;小时部门领导和全体技术人员的通讯畅通。加强晚间重要直播时段的值班力量，领导加强一线值班，随时应对应急事件和各类应急播出。加强待岗技术人员的数量，包括晚间&lt;/span&gt;10&lt;span style=&quot;font-family:宋体&quot;&gt;点后，如果有应急需要，随时延长。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.2&lt;span style=&quot;font-family:宋体&quot;&gt;、加强播出技术的保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;随时准备配合总编室变更节目单，为有可能的直播或转播做准备。加强巡查总控调度和播控运行的情况，排除故障隐患。检查有可能使用的各路直播信号，确保光缆及卫星信号的正常。加强巡查&lt;/span&gt;GPS&lt;span style=&quot;font-family:宋体&quot;&gt;及北斗时钟天线及通道，确保正常。加强巡查播出机房到华数机房的光缆通道，确保正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.3&lt;span style=&quot;font-family:宋体&quot;&gt;、加强电力及空调保障的应对措施：当外电断电时，机房在&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;供电的情况下，积极配合行政安保部门对&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;用电的管理和调度。当楼层或机房空调出现故障时，采用各种补充手段保证机房温度正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.4&lt;span style=&quot;font-family:宋体&quot;&gt;、严格执行每日&lt;/span&gt;“&lt;span style=&quot;font-family:宋体&quot;&gt;零汇报&lt;/span&gt;”&lt;span style=&quot;font-family:宋体&quot;&gt;制度。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;电视技术中心播出部&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2017&lt;span style=&quot;font-family:宋体&quot;&gt;年&lt;/span&gt;9&lt;span style=&quot;font-family:宋体&quot;&gt;月&lt;/span&gt;&lt;/p&gt;',`intro`='',`author`='',`cover`='',`catid`=21,`rhref`='',`rhref_text`='阅读原文',`is_show_title`=1,`is_show_statis`=1,`is_vip`=1,`views`=2,`likes`=0,`is_tmp`=0,`updatetime`=1506652148,`dateline`=1506651840  WHERE  `id` = 331  AND `is_del` = 0                      [ RunTime:0.039488s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:12+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.095345s][吞吐率：10.49req/s] [内存消耗：3,506.20kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001107s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001707s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000847s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.036426s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:17+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.094361s][吞吐率：10.60req/s] [内存消耗：3,462.67kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001312s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001375s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000783s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.033662s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:17+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.055977s][吞吐率：17.86req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000337s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:31+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.056898s][吞吐率：17.58req/s] [内存消耗：3,520.84kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000216s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:31+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.061981s][吞吐率：16.13req/s] [内存消耗：3,520.85kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001614s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001623s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000316s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:31+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.048138s][吞吐率：20.77req/s] [内存消耗：3,337.40kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000643s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:39+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.067530s][吞吐率：14.81req/s] [内存消耗：3,666.04kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000395s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `uid`=3,`title`='十九大期间电视播出的安全播出应急预案',`content`='&lt;p&gt;1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播期间，信号源出现非法内容或其它突发情况时应急处理办法：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播信号中出现非法声音、图像或字幕时，应立即切断该信号源，播出垫片。&lt;/span&gt; &lt;/p&gt;&lt;p&gt;1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时、若信号被干扰或出现黑场时，应选择未被干扰的备路信号切出，若主备路均受干扰或出现黑场，立即切垫片。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时信号受气象等自然因素影响，画面出现严重马赛克、黑场等情况，技术人员应立即采取必要措施，设法用较好的信号播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、应急处理后，立即向本部门主任汇报。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.5&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间，重点关注包括针对十九大的非法声音、图像或字幕的内容。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;2&lt;span style=&quot;font-family:宋体&quot;&gt;、标清系统播出节目或节目单不能及时到达的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当节目单因网络原因无法按时传到播出机房时，应立即通知总编室相关人员用机房专用&lt;/span&gt;U&lt;span style=&quot;font-family:宋体&quot;&gt;盘直接拷贝，然后在播出机房的编单机上直接编单。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.2&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出隐患时，采用应急上载的方式上载节目素材。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出事故时，在播出时间前&lt;/span&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;分钟做好应急录像机播出的准备工作，并与总编室联系节目单的修改措施。送带人应进入播出机房，确定节目片头画面，待播出结束之后方可离开。播出员应严格按照修改后的节目单执行。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;在播出时间前&lt;/span&gt;5-10&lt;span style=&quot;font-family:宋体&quot;&gt;分钟送达上载机房的磁带的处理详见《播出上载约定》。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因光缆中断无法按时传送到广告缓存区时，广告中心将以移动硬盘将素材送到上载机房，上载人员立即采用本地广告传输的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因网关故障无法按时传送到广告缓存区时，广告中心将以磁带的形式将素材送到上载机房，上载人员立即采用磁带上载的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.6&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间播出及上载人员应重点关注有关十九大的报道节目，在应急处理的时候应重点保障此类节目的应急播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.7&lt;span style=&quot;font-family:宋体&quot;&gt;、关于十九大的各类宣传片应给与重点统一保管，以备应急使用。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;标清系统播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;中只有一个有信号，另一个无信号时，立即通知技术人员，更换相应的输出分配板。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;有信号时，说明主播出板故障，立即切&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键，由备播出板输出信号。当主备播出板都有故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;马上通过跳线从测试信号&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;黄色跳线口&lt;/span&gt;)&lt;span style=&quot;font-family: 宋体&quot;&gt;把相应信号源跳出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;也无信号时，立即手动切换垫片信号，然后查看信号源监视器的情况，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.1&lt;span style=&quot;font-family:宋体&quot;&gt;：当视频服务器信号播出时，主通道无信号，备通道有信号，立即手动切到备通道，准备磁带跟播。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.2&lt;span style=&quot;font-family:宋体&quot;&gt;：现场直播时主信号故障，备信号正常时，立即手动切到备信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载存储器无法向播出存储器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.6&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.7&lt;span style=&quot;font-family:宋体&quot;&gt;当切换台上的&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键切换失灵时，应在主切换器对应频道的播出板上手动拨&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;开关。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;4&lt;span style=&quot;font-family:宋体&quot;&gt;、高清播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当主、备、二备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载服务器无法向播出服务器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;．供配电故障的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当配电柜中有空开等故障引起多只插座没电时，应立即将相关的设备电源线接到正常的插座上，或者通过应急接线板转接。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.2&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt; &lt;span style=&quot;font-family:宋体&quot;&gt;当&lt;/span&gt;UPS&lt;span style=&quot;font-family: 宋体&quot;&gt;供电发生故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;应把单电源供电的设备&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;电源线上有特殊标志&lt;/span&gt;)&lt;span style=&quot;font-family:宋体&quot;&gt;接至市电一路。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;6&lt;span style=&quot;font-family:宋体&quot;&gt;、加强各项保障预案&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.1&lt;span style=&quot;font-family:宋体&quot;&gt;：加强人员保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;十九大期间确保&lt;/span&gt;24&lt;span style=&quot;font-family:宋体&quot;&gt;小时部门领导和全体技术人员的通讯畅通。加强晚间重要直播时段的值班力量，领导加强一线值班，随时应对应急事件和各类应急播出。加强待岗技术人员的数量，包括晚间&lt;/span&gt;10&lt;span style=&quot;font-family:宋体&quot;&gt;点后，如果有应急需要，随时延长。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.2&lt;span style=&quot;font-family:宋体&quot;&gt;、加强播出技术的保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;随时准备配合总编室变更节目单，为有可能的直播或转播做准备。加强巡查总控调度和播控运行的情况，排除故障隐患。检查有可能使用的各路直播信号，确保光缆及卫星信号的正常。加强巡查&lt;/span&gt;GPS&lt;span style=&quot;font-family:宋体&quot;&gt;及北斗时钟天线及通道，确保正常。加强巡查播出机房到华数机房的光缆通道，确保正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.3&lt;span style=&quot;font-family:宋体&quot;&gt;、加强电力及空调保障的应对措施：当外电断电时，机房在&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;供电的情况下，积极配合行政安保部门对&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;用电的管理和调度。当楼层或机房空调出现故障时，采用各种补充手段保证机房温度正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.4&lt;span style=&quot;font-family:宋体&quot;&gt;、严格执行每日&lt;/span&gt;“&lt;span style=&quot;font-family:宋体&quot;&gt;零汇报&lt;/span&gt;”&lt;span style=&quot;font-family:宋体&quot;&gt;制度。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;电视技术中心播出部&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2017&lt;span style=&quot;font-family:宋体&quot;&gt;年&lt;/span&gt;9&lt;span style=&quot;font-family:宋体&quot;&gt;月&lt;/span&gt;&lt;/p&gt;',`intro`='',`author`='',`cover`='',`catid`=21,`rhref`='',`rhref_text`='阅读原文',`is_show_title`=1,`is_show_statis`=1,`is_vip`=1,`views`=4,`likes`=0,`is_tmp`=0,`updatetime`=1506652179,`dateline`=1506651840  WHERE  `id` = 331  AND `is_del` = 0                      [ RunTime:0.034882s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:42+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.093851s][吞吐率：10.66req/s] [内存消耗：3,506.02kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001097s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001620s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000840s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.034083s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:44+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.098130s][吞吐率：10.19req/s] [内存消耗：3,462.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001089s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001664s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000797s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.038910s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:29:44+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.057570s][吞吐率：17.37req/s] [内存消耗：3,888.83kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001163s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000461s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:31:57+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.100195s][吞吐率：9.98req/s] [内存消耗：3,505.55kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001135s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001709s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000758s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.041457s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:32:37+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.120083s][吞吐率：8.33req/s] [内存消耗：3,462.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001456s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000896s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.060394s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:32:38+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.057463s][吞吐率：17.40req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001229s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001530s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:32:47+08:00 ] 10.0.0.249 117.185.27.115 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.129826s][吞吐率：7.70req/s] [内存消耗：3,462.14kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001224s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001193s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000760s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.070505s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:36:49+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.089247s][吞吐率：11.20req/s] [内存消耗：3,462.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001023s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001733s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000675s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.034207s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:36:50+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.056776s][吞吐率：17.61req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001132s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000339s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:39:53+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.097437s][吞吐率：10.26req/s] [内存消耗：3,462.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001496s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001671s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000756s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.037787s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:39:53+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.056548s][吞吐率：17.68req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001260s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:49:25+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.096504s][吞吐率：10.36req/s] [内存消耗：3,462.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001055s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001610s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001768s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000863s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.035922s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:49:25+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.056248s][吞吐率：17.78req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001231s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:52:31+08:00 ] 10.0.0.249 117.185.24.135 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.047231s][吞吐率：21.17req/s] [内存消耗：2,934.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000274s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:52:31+08:00 ] 10.0.0.249 101.226.125.121 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.101011s][吞吐率：9.90req/s] [内存消耗：3,462.52kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000978s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001725s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001978s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000763s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.040425s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:52:31+08:00 ] 10.0.0.249 140.207.54.199 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.048415s][吞吐率：20.65req/s] [内存消耗：2,934.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001068s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001460s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000372s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T10:52:31+08:00 ] 10.0.0.249 101.226.125.121 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.056466s][吞吐率：17.71req/s] [内存消耗：3,889.14kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001084s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000378s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:02:49+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.111617s][吞吐率：8.96req/s] [内存消耗：3,462.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000938s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.051977s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:02:50+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.058596s][吞吐率：17.07req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001146s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001562s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000372s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:22:52+08:00 ] 10.0.0.249 101.226.102.145 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.112299s][吞吐率：8.90req/s] [内存消耗：3,462.82kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001880s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000885s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.054834s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:22:53+08:00 ] 10.0.0.249 101.226.102.145 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.053564s][吞吐率：18.67req/s] [内存消耗：3,888.83kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000350s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:27:16+08:00 ] 10.0.0.249 220.189.193.13 GET /admin
+[ log ] kc.nbtv.cn/admin [运行时间：0.049438s][吞吐率：20.23req/s] [内存消耗：3,073.32kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001044s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000418s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:27:34+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.118907s][吞吐率：8.41req/s] [内存消耗：3,551.62kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001157s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001589s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `email` = 'sl@nbtv.com.cn'  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000747s ]
+[ sql ] [ SQL ] UPDATE `ppsao_admin`  SET `username`='',`lasttime`=1506655654,`lastip`='220.189.193.13',`logins`=logins+1  WHERE  `id` = 3       [ RunTime:0.057401s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:27:37+08:00 ] 10.0.0.249 220.189.193.13 GET /Admin/panel.html
+[ log ] kc.nbtv.cn/Admin/panel.html [运行时间：0.055143s][吞吐率：18.13req/s] [内存消耗：3,384.73kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001433s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000316s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:27:39+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.069888s][吞吐率：14.31req/s] [内存消耗：3,801.47kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001094s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001468s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000299s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:28:06+08:00 ] 10.0.0.249 220.189.193.13 GET /admin
+[ log ] kc.nbtv.cn/admin [运行时间：0.049706s][吞吐率：20.12req/s] [内存消耗：3,073.73kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001236s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001461s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000485s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:28:12+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.048876s][吞吐率：20.46req/s] [内存消耗：3,047.74kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001085s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000405s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:30:36+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.064995s][吞吐率：15.39req/s] [内存消耗：3,801.75kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001220s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000312s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:30:38+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.057505s][吞吐率：17.39req/s] [内存消耗：3,520.66kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001040s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000256s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:30:38+08:00 ] 10.0.0.249 220.189.193.13 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.056301s][吞吐率：17.76req/s] [内存消耗：3,520.66kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001741s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000267s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:30:38+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.052583s][吞吐率：19.02req/s] [内存消耗：3,337.40kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001159s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000650s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:31:30+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.087004s][吞吐率：11.49req/s] [内存消耗：3,665.84kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000379s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `uid`=3,`title`='十九大期间电视播出的应急预案',`content`='&lt;p&gt;1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播期间，信号源出现非法内容或其它突发情况时应急处理办法：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播信号中出现非法声音、图像或字幕时，应立即切断该信号源，播出垫片。&lt;/span&gt; &lt;/p&gt;&lt;p&gt;1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时、若信号被干扰或出现黑场时，应选择未被干扰的备路信号切出，若主备路均受干扰或出现黑场，立即切垫片。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时信号受气象等自然因素影响，画面出现严重马赛克、黑场等情况，技术人员应立即采取必要措施，设法用较好的信号播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、应急处理后，立即向本部门主任汇报。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.5&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间，重点关注包括针对十九大的非法声音、图像或字幕的内容。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;2&lt;span style=&quot;font-family:宋体&quot;&gt;、标清系统播出节目或节目单不能及时到达的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当节目单因网络原因无法按时传到播出机房时，应立即通知总编室相关人员用机房专用&lt;/span&gt;U&lt;span style=&quot;font-family:宋体&quot;&gt;盘直接拷贝，然后在播出机房的编单机上直接编单。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.2&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出隐患时，采用应急上载的方式上载节目素材。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出事故时，在播出时间前&lt;/span&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;分钟做好应急录像机播出的准备工作，并与总编室联系节目单的修改措施。送带人应进入播出机房，确定节目片头画面，待播出结束之后方可离开。播出员应严格按照修改后的节目单执行。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;在播出时间前&lt;/span&gt;5-10&lt;span style=&quot;font-family:宋体&quot;&gt;分钟送达上载机房的磁带的处理详见《播出上载约定》。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因光缆中断无法按时传送到广告缓存区时，广告中心将以移动硬盘将素材送到上载机房，上载人员立即采用本地广告传输的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因网关故障无法按时传送到广告缓存区时，广告中心将以磁带的形式将素材送到上载机房，上载人员立即采用磁带上载的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.6&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间播出及上载人员应重点关注有关十九大的报道节目，在应急处理的时候应重点保障此类节目的应急播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.7&lt;span style=&quot;font-family:宋体&quot;&gt;、关于十九大的各类宣传片应给与重点统一保管，以备应急使用。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;标清系统播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;中只有一个有信号，另一个无信号时，立即通知技术人员，更换相应的输出分配板。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;有信号时，说明主播出板故障，立即切&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键，由备播出板输出信号。当主备播出板都有故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;马上通过跳线从测试信号&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;黄色跳线口&lt;/span&gt;)&lt;span style=&quot;font-family: 宋体&quot;&gt;把相应信号源跳出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;也无信号时，立即手动切换垫片信号，然后查看信号源监视器的情况，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.1&lt;span style=&quot;font-family:宋体&quot;&gt;：当视频服务器信号播出时，主通道无信号，备通道有信号，立即手动切到备通道，准备磁带跟播。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.2&lt;span style=&quot;font-family:宋体&quot;&gt;：现场直播时主信号故障，备信号正常时，立即手动切到备信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载存储器无法向播出存储器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.6&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.7&lt;span style=&quot;font-family:宋体&quot;&gt;当切换台上的&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键切换失灵时，应在主切换器对应频道的播出板上手动拨&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;开关。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;4&lt;span style=&quot;font-family:宋体&quot;&gt;、高清播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当主、备、二备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载服务器无法向播出服务器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;．供配电故障的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当配电柜中有空开等故障引起多只插座没电时，应立即将相关的设备电源线接到正常的插座上，或者通过应急接线板转接。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.2&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt; &lt;span style=&quot;font-family:宋体&quot;&gt;当&lt;/span&gt;UPS&lt;span style=&quot;font-family: 宋体&quot;&gt;供电发生故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;应把单电源供电的设备&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;电源线上有特殊标志&lt;/span&gt;)&lt;span style=&quot;font-family:宋体&quot;&gt;接至市电一路。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;6&lt;span style=&quot;font-family:宋体&quot;&gt;、加强各项保障预案&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.1&lt;span style=&quot;font-family:宋体&quot;&gt;：加强人员保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;十九大期间确保&lt;/span&gt;24&lt;span style=&quot;font-family:宋体&quot;&gt;小时部门领导和全体技术人员的通讯畅通。加强晚间重要直播时段的值班力量，领导加强一线值班，随时应对应急事件和各类应急播出。加强待岗技术人员的数量，包括晚间&lt;/span&gt;10&lt;span style=&quot;font-family:宋体&quot;&gt;点后，如果有应急需要，随时延长。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.2&lt;span style=&quot;font-family:宋体&quot;&gt;、加强播出技术的保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;随时准备配合总编室变更节目单，为有可能的直播或转播做准备。加强巡查总控调度和播控运行的情况，排除故障隐患。检查有可能使用的各路直播信号，确保光缆及卫星信号的正常。加强巡查&lt;/span&gt;GPS&lt;span style=&quot;font-family:宋体&quot;&gt;及北斗时钟天线及通道，确保正常。加强巡查播出机房到华数机房的光缆通道，确保正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.3&lt;span style=&quot;font-family:宋体&quot;&gt;、加强电力及空调保障的应对措施：当外电断电时，机房在&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;供电的情况下，积极配合行政安保部门对&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;用电的管理和调度。当楼层或机房空调出现故障时，采用各种补充手段保证机房温度正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.4&lt;span style=&quot;font-family:宋体&quot;&gt;、严格执行每日&lt;/span&gt;“&lt;span style=&quot;font-family:宋体&quot;&gt;零汇报&lt;/span&gt;”&lt;span style=&quot;font-family:宋体&quot;&gt;制度。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;电视技术中心播出部&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2017&lt;span style=&quot;font-family:宋体&quot;&gt;年&lt;/span&gt;7&lt;span style=&quot;font-family:宋体&quot;&gt;月&lt;/span&gt;&lt;/p&gt;',`intro`='',`author`='',`cover`='',`catid`=21,`rhref`='',`rhref_text`='阅读原文',`is_show_title`=1,`is_show_statis`=1,`is_vip`=1,`views`=15,`likes`=0,`is_tmp`=0,`updatetime`=1506655890,`dateline`=1501295040  WHERE  `id` = 331  AND `is_del` = 0                      [ RunTime:0.057376s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:31:34+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.107559s][吞吐率：9.30req/s] [内存消耗：3,506.00kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000680s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.051711s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:31:45+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.093236s][吞吐率：10.73req/s] [内存消耗：3,462.39kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001095s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001332s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000764s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.034745s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:31:45+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.056101s][吞吐率：17.83req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000272s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:03+08:00 ] 10.0.0.249 220.189.193.13 GET /admin
+[ log ] kc.nbtv.cn/admin [运行时间：0.049292s][吞吐率：20.29req/s] [内存消耗：3,073.30kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001260s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000324s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:40+08:00 ] 10.0.0.249 112.17.239.237 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.088095s][吞吐率：11.35req/s] [内存消耗：3,551.55kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001231s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `email` = 'sl@nbtv.com.cn'  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000696s ]
+[ sql ] [ SQL ] UPDATE `ppsao_admin`  SET `username`='',`lasttime`=1506656020,`lastip`='112.17.239.237',`logins`=logins+1  WHERE  `id` = 3       [ RunTime:0.033320s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:43+08:00 ] 10.0.0.249 112.17.239.237 GET /Admin/panel.html
+[ log ] kc.nbtv.cn/Admin/panel.html [运行时间：0.052999s][吞吐率：18.87req/s] [内存消耗：3,384.63kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001219s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:46+08:00 ] 10.0.0.249 112.17.239.237 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.065220s][吞吐率：15.33req/s] [内存消耗：3,801.30kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001408s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000238s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:51+08:00 ] 10.0.0.249 112.17.239.237 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.061525s][吞吐率：16.25req/s] [内存消耗：3,520.70kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001006s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001644s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001516s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000375s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:51+08:00 ] 10.0.0.249 112.17.239.237 GET /admin/wenan/edit.html?id=331
+[ log ] kc.nbtv.cn/admin/wenan/edit.html?id=331 [运行时间：0.060227s][吞吐率：16.60req/s] [内存消耗：3,520.52kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001026s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000244s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:33:52+08:00 ] 10.0.0.249 112.17.239.237 POST /admin/wenan/loadtemp.html
+[ log ] kc.nbtv.cn/admin/wenan/loadtemp.html [运行时间：0.052818s][吞吐率：18.93req/s] [内存消耗：3,337.76kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001640s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000596s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:34:39+08:00 ] 10.0.0.249 220.189.193.13 POST /admin/wenan/save.html
+[ log ] kc.nbtv.cn/admin/wenan/save.html [运行时间：0.076493s][吞吐率：13.07req/s] [内存消耗：3,665.69kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 3  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000296s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `uid`=3,`title`='十九大期间电视安全播出应急预案',`content`='&lt;p style=&quot;text-align: left;&quot;&gt;1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播期间，信号源出现非法内容或其它突发情况时应急处理办法：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播信号中出现非法声音、图像或字幕时，应立即切断该信号源，播出垫片。&lt;/span&gt; &lt;/p&gt;&lt;p&gt;1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时、若信号被干扰或出现黑场时，应选择未被干扰的备路信号切出，若主备路均受干扰或出现黑场，立即切垫片。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、直播或转播时信号受气象等自然因素影响，画面出现严重马赛克、黑场等情况，技术人员应立即采取必要措施，设法用较好的信号播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、应急处理后，立即向本部门主任汇报。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1.5&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间，重点关注包括针对十九大的非法声音、图像或字幕的内容。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;2&lt;span style=&quot;font-family:宋体&quot;&gt;、标清系统播出节目或节目单不能及时到达的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当节目单因网络原因无法按时传到播出机房时，应立即通知总编室相关人员用机房专用&lt;/span&gt;U&lt;span style=&quot;font-family:宋体&quot;&gt;盘直接拷贝，然后在播出机房的编单机上直接编单。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.2&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出隐患时，采用应急上载的方式上载节目素材。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当磁带较晚送达上载机房，已形成播出事故时，在播出时间前&lt;/span&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;分钟做好应急录像机播出的准备工作，并与总编室联系节目单的修改措施。送带人应进入播出机房，确定节目片头画面，待播出结束之后方可离开。播出员应严格按照修改后的节目单执行。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;在播出时间前&lt;/span&gt;5-10&lt;span style=&quot;font-family:宋体&quot;&gt;分钟送达上载机房的磁带的处理详见《播出上载约定》。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因光缆中断无法按时传送到广告缓存区时，广告中心将以移动硬盘将素材送到上载机房，上载人员立即采用本地广告传输的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当广告文件因网关故障无法按时传送到广告缓存区时，广告中心将以磁带的形式将素材送到上载机房，上载人员立即采用磁带上载的应急模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.6&lt;span style=&quot;font-family:宋体&quot;&gt;、十九大期间播出及上载人员应重点关注有关十九大的报道节目，在应急处理的时候应重点保障此类节目的应急播出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;2.7&lt;span style=&quot;font-family:宋体&quot;&gt;、关于十九大的各类宣传片应给与重点统一保管，以备应急使用。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;标清系统播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;中只有一个有信号，另一个无信号时，立即通知技术人员，更换相应的输出分配板。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;有信号时，说明主播出板故障，立即切&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键，由备播出板输出信号。当主备播出板都有故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;马上通过跳线从测试信号&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;黄色跳线口&lt;/span&gt;)&lt;span style=&quot;font-family: 宋体&quot;&gt;把相应信号源跳出。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙和控制台上的&lt;/span&gt;PGM&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;也无信号时，立即手动切换垫片信号，然后查看信号源监视器的情况，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.1&lt;span style=&quot;font-family:宋体&quot;&gt;：当视频服务器信号播出时，主通道无信号，备通道有信号，立即手动切到备通道，准备磁带跟播。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; 3.3.2&lt;span style=&quot;font-family:宋体&quot;&gt;：现场直播时主信号故障，备信号正常时，立即手动切到备信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载存储器无法向播出存储器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.6&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3.7&lt;span style=&quot;font-family:宋体&quot;&gt;当切换台上的&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;键切换失灵时，应在主切换器对应频道的播出板上手动拨&lt;/span&gt;BYPASS&lt;span style=&quot;font-family:宋体&quot;&gt;开关。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;4&lt;span style=&quot;font-family:宋体&quot;&gt;、高清播出系统出现技术性问题的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-HD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-HD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;HD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;HD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若监视墙上&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;信号异常时，需要查看监视墙上三选一输入信号监视点，分别进行以下操作&lt;/span&gt;:&lt;/p&gt;&lt;p&gt;4.1.1&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;一个有信号一个无信号时，立即通知技术人员，联系下游单位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.2&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;无信号，&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-2&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.1.3&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;无信号、&lt;/span&gt;HD-3&lt;span style=&quot;font-family:宋体&quot;&gt;信号正常，立即手动切至&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 4.1.4&lt;span style=&quot;font-family:宋体&quot;&gt;、若&lt;/span&gt;1-SD-M&lt;span style=&quot;font-family:宋体&quot;&gt;和&lt;/span&gt;1-SD-B&lt;span style=&quot;font-family:宋体&quot;&gt;都无信号，观察到&lt;/span&gt;SD-1&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt;SD-2&lt;span style=&quot;font-family: 宋体&quot;&gt;、&lt;/span&gt;SD-3&lt;span style=&quot;font-family:宋体&quot;&gt;均无信号，检查信号源，切换正常信号。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.3&lt;span style=&quot;font-family:宋体&quot;&gt;、当主、备、二备视频服务器同时出现故障，或者主备数据库同时出现故障时，用应急录像机播出，播出员有权变更节目单，播出长节目。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.4&lt;span style=&quot;font-family:宋体&quot;&gt;、当上载服务器无法向播出服务器传送素材时，应采用应急上载模式。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4.5&lt;span style=&quot;font-family:宋体&quot;&gt;、当主播控机因故无法正常工作，又不能自动倒换到备播控机时，应手动倒换到备播控机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;5&lt;span style=&quot;font-family:宋体&quot;&gt;．供配电故障的应急处理办法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.1&lt;span style=&quot;font-family:宋体&quot;&gt;、当配电柜中有空开等故障引起多只插座没电时，应立即将相关的设备电源线接到正常的插座上，或者通过应急接线板转接。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;5.2&lt;span style=&quot;font-family:宋体&quot;&gt;、&lt;/span&gt; &lt;span style=&quot;font-family:宋体&quot;&gt;当&lt;/span&gt;UPS&lt;span style=&quot;font-family: 宋体&quot;&gt;供电发生故障时&lt;/span&gt;,&lt;span style=&quot;font-family:宋体&quot;&gt;应把单电源供电的设备&lt;/span&gt;(&lt;span style=&quot;font-family:宋体&quot;&gt;电源线上有特殊标志&lt;/span&gt;)&lt;span style=&quot;font-family:宋体&quot;&gt;接至市电一路。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;6&lt;span style=&quot;font-family:宋体&quot;&gt;、加强各项保障预案&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.1&lt;span style=&quot;font-family:宋体&quot;&gt;：加强人员保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;十九大期间确保&lt;/span&gt;24&lt;span style=&quot;font-family:宋体&quot;&gt;小时部门领导和全体技术人员的通讯畅通。加强晚间重要直播时段的值班力量，领导加强一线值班，随时应对应急事件和各类应急播出。加强待岗技术人员的数量，包括晚间&lt;/span&gt;10&lt;span style=&quot;font-family:宋体&quot;&gt;点后，如果有应急需要，随时延长。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.2&lt;span style=&quot;font-family:宋体&quot;&gt;、加强播出技术的保障：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;随时准备配合总编室变更节目单，为有可能的直播或转播做准备。加强巡查总控调度和播控运行的情况，排除故障隐患。检查有可能使用的各路直播信号，确保光缆及卫星信号的正常。加强巡查&lt;/span&gt;GPS&lt;span style=&quot;font-family:宋体&quot;&gt;及北斗时钟天线及通道，确保正常。加强巡查播出机房到华数机房的光缆通道，确保正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.3&lt;span style=&quot;font-family:宋体&quot;&gt;、加强电力及空调保障的应对措施：当外电断电时，机房在&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;供电的情况下，积极配合行政安保部门对&lt;/span&gt;UPS&lt;span style=&quot;font-family:宋体&quot;&gt;用电的管理和调度。当楼层或机房空调出现故障时，采用各种补充手段保证机房温度正常。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;6.4&lt;span style=&quot;font-family:宋体&quot;&gt;、严格执行每日&lt;/span&gt;“&lt;span style=&quot;font-family:宋体&quot;&gt;零汇报&lt;/span&gt;”&lt;span style=&quot;font-family:宋体&quot;&gt;制度。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;span style=&quot;font-family:宋体&quot;&gt;电视技术中心播出部&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2017&lt;span style=&quot;font-family:宋体&quot;&gt;年&lt;/span&gt;7&lt;span style=&quot;font-family:宋体&quot;&gt;月&lt;/span&gt;&lt;/p&gt;',`intro`='',`author`='',`cover`='',`catid`=21,`rhref`='',`rhref_text`='阅读原文',`is_show_title`=1,`is_show_statis`=1,`is_vip`=1,`views`=17,`likes`=0,`is_tmp`=0,`updatetime`=1506656079,`dateline`=1501295040  WHERE  `id` = 331  AND `is_del` = 0                      [ RunTime:0.047161s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:34:45+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.101049s][吞吐率：9.90req/s] [内存消耗：3,506.67kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001685s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000858s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.041941s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:34:48+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.058913s][吞吐率：16.97req/s] [内存消耗：4,173.28kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000441s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:34:53+08:00 ] 10.0.0.249 220.189.193.13 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.106571s][吞吐率：9.38req/s] [内存消耗：3,462.48kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001506s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001575s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000837s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.047531s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T11:34:53+08:00 ] 10.0.0.249 220.189.193.13 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.054754s][吞吐率：18.26req/s] [内存消耗：3,888.82kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:04:14+08:00 ] 10.0.0.249 101.226.102.140 GET /index/wenan/view.html?id=59
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=59 [运行时间：0.109399s][吞吐率：9.14req/s] [内存消耗：3,482.86kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001151s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001578s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 59  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000846s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 59  AND `is_del` = 0     [ RunTime:0.049370s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:04:16+08:00 ] 10.0.0.249 101.226.102.140 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D59
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D59 [运行时间：0.057595s][吞吐率：17.36req/s] [内存消耗：3,888.77kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000361s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:17:35+08:00 ] 10.0.0.249 117.185.27.145 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.043872s][吞吐率：22.79req/s] [内存消耗：2,934.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000240s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:17:35+08:00 ] 10.0.0.249 101.226.102.120 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.106725s][吞吐率：9.37req/s] [内存消耗：3,462.70kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000694s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.049635s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:17:35+08:00 ] 10.0.0.249 140.207.54.158 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.047909s][吞吐率：20.87req/s] [内存消耗：2,934.22kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001507s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000446s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:17:36+08:00 ] 10.0.0.249 101.226.102.120 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D331 [运行时间：0.057937s][吞吐率：17.26req/s] [内存消耗：3,888.83kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001147s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001447s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T12:17:43+08:00 ] 10.0.0.249 117.185.27.115 GET /index/wenan/view.html?id=331
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=331 [运行时间：0.108251s][吞吐率：9.24req/s] [内存消耗：3,462.22kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001097s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 331  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000903s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 331  AND `is_del` = 0     [ RunTime:0.048999s ]
+
+---------------------------------------------------------------
+[ 2017-09-29T13:45:50+08:00 ] 10.0.0.249 106.11.225.195 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.050593s][吞吐率：19.77req/s] [内存消耗：2,934.20kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001108s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000372s ]
+
+---------------------------------------------------------------

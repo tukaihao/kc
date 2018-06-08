@@ -1,0 +1,7 @@
+[ 2017-08-26T15:38:16+08:00 ] 10.0.0.249 106.11.227.141 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.050962s][吞吐率：19.62req/s] [内存消耗：2,934.19kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001253s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001553s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000381s ]
+
+---------------------------------------------------------------

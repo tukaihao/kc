@@ -1,0 +1,82 @@
+{extend name="public/base_index" /}
+
+{block name="title"}
+        <title>{$settings.name}</title>
+        <meta name="keyword" content="{$settings.name}">
+        <meta name="description" content="{$settings.name}">
+{/block}
+{block name="head"}
+<style>
+.attr{color:#777777; display:inline-block; width:10%; float:left; font-size:14px;}
+.attrval{display:inline-block; width:90%; float:right;font-size:14px;}
+.attrdesc{color:#888}
+.clear-row{clear:both; margin-bottom:10px;;}
+</style>
+
+
+{/block}<!--end head-->
+
+{block name="body"}
+
+<div class="page__bd">
+	
+	<div class="weui-cells weui-cells_form mt0">
+		
+		 <div class="weui-panel weui-panel_access">
+          
+            <div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                   
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title" style="font-size:14px;">{$settings.name}</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+	</div>
+	<div class="weui-cells weui-cells_form">
+		
+		<div class="weui-panel weui-panel_access">
+			<div class="weui-panel__bd">
+				<article class="weui-article">
+				
+					<p>
+						<h2>{$settings.name}</h2>
+						请登陆后再制作二维码
+					</p>
+
+
+				</article>
+			</div>
+	
+		</div>
+
+
+	
+	</div>
+
+	
+
+
+	<div class="weui-footer" style="margin-top:20px;">
+		<p class="weui-footer__text">{$settings.copyright}  <a href="http://www.miitbeian.gov.cn/" target="_blank">{$settings.beian}</a> </p>
+	</div>
+
+
+
+
+</div>
+
+
+
+{/block}<!--end body-->
+
+
+{block name="footer_js"}
+
+
+
+
+
+{/block}

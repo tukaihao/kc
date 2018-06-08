@@ -1,0 +1,507 @@
+[ 2018-05-25T11:59:15+08:00 ] 10.0.0.249 183.136.190.62 GET /
+[ log ] kc.nbtv.cn/ [运行时间：0.049166s][吞吐率：20.34req/s] [内存消耗：2,934.16kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001138s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001477s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000376s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:34:25+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=136
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=136 [运行时间：0.112258s][吞吐率：8.91req/s] [内存消耗：3,473.28kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001326s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001230s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 136  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000741s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 136  AND `is_del` = 0     [ RunTime:0.050628s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:34:26+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D136
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D136 [运行时间：0.402855s][吞吐率：2.48req/s] [内存消耗：3,888.87kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001286s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:34:32+08:00 ] 10.0.0.249 211.138.117.136 GET /admin/index/index?back=1
+[ log ] kc.nbtv.cn/admin/index/index?back=1 [运行时间：0.050199s][吞吐率：19.92req/s] [内存消耗：3,073.99kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001455s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000419s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:35:23+08:00 ] 10.0.0.249 61.151.178.165 GET /index/wenan/view.html?id=136
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=136 [运行时间：0.104026s][吞吐率：9.61req/s] [内存消耗：3,472.70kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001278s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001764s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 136  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000783s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 136  AND `is_del` = 0     [ RunTime:0.043849s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:35:26+08:00 ] 10.0.0.249 211.138.117.136 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.048585s][吞吐率：20.58req/s] [内存消耗：3,047.41kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001118s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:35:32+08:00 ] 10.0.0.249 117.185.117.57 GET /admin/index/index?back=1
+[ log ] kc.nbtv.cn/admin/index/index?back=1 [运行时间：0.046488s][吞吐率：21.51req/s] [内存消耗：3,073.36kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000947s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001530s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000359s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:35:43+08:00 ] 10.0.0.249 211.138.117.136 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.054588s][吞吐率：18.32req/s] [内存消耗：3,379.18kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001100s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `email` = 'wgd@nbtv.com.cn'  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000753s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:17+08:00 ] 10.0.0.249 211.138.117.136 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.106806s][吞吐率：9.36req/s] [内存消耗：3,551.49kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001091s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `email` = 'wgd@nbtv.com.cn'  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000477s ]
+[ sql ] [ SQL ] UPDATE `ppsao_admin`  SET `username`='',`lasttime`=1527222976,`lastip`='211.138.117.136',`logins`=logins+1  WHERE  `id` = 9       [ RunTime:0.047341s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:19+08:00 ] 10.0.0.249 211.138.117.136 GET /Admin/panel.html
+[ log ] kc.nbtv.cn/Admin/panel.html [运行时间：0.054819s][吞吐率：18.24req/s] [内存消耗：3,385.03kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001017s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001622s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000357s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:26+08:00 ] 10.0.0.249 101.226.86.154 GET /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.048888s][吞吐率：20.45req/s] [内存消耗：3,047.90kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001434s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000403s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:33+08:00 ] 10.0.0.249 211.138.117.136 GET /admin/wenan/index.html
+[ log ] kc.nbtv.cn/admin/wenan/index.html [运行时间：0.065258s][吞吐率：15.32req/s] [内存消耗：3,886.41kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001036s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 1    [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `is_del` = 0 ORDER BY id desc LIMIT 0,5    [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan_cat` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan_cat` WHERE  `is_del` = 0 ORDER BY nav_sort desc,id asc   [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:36+08:00 ] 10.0.0.249 211.138.117.136 GET /admin/panel/index.html
+[ log ] kc.nbtv.cn/admin/panel/index.html [运行时间：0.054972s][吞吐率：18.19req/s] [内存消耗：3,384.92kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001335s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001294s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000291s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:45+08:00 ] 10.0.0.249 211.138.117.136 POST /admin/index/login.html
+[ log ] kc.nbtv.cn/admin/index/login.html [运行时间：0.051667s][吞吐率：19.35req/s] [内存消耗：3,350.59kb] [文件加载：56]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001326s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`email`,`realname`,`tel`,`qq`,`sex`,`address`,`lasttime`,`lastip`,`logins`,`is_check_email`,`status`,`updatetime`,`dateline` FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000273s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:57+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=136
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=136 [运行时间：0.112625s][吞吐率：8.88req/s] [内存消耗：3,572.75kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001641s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 136  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000733s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 136  AND `is_del` = 0     [ RunTime:0.050219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001317s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000630s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:36:58+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D136
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D136 [运行时间：0.059017s][吞吐率：16.94req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000262s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:38:25+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=264
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=264 [运行时间：0.113437s][吞吐率：8.82req/s] [内存消耗：3,573.05kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001041s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001543s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001541s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 264  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000867s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 264  AND `is_del` = 0     [ RunTime:0.050082s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000479s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:38:26+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D264
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D264 [运行时间：0.059320s][吞吐率：16.86req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001114s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000406s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:38:55+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=136
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=136 [运行时间：0.116491s][吞吐率：8.58req/s] [内存消耗：3,572.75kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001690s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 136  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000854s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 136  AND `is_del` = 0     [ RunTime:0.053338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000463s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:38:55+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D136
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D136 [运行时间：0.061596s][吞吐率：16.23req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001284s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001469s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:39:03+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=231
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=231 [运行时间：0.115876s][吞吐率：8.63req/s] [内存消耗：3,573.05kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001091s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001778s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 231  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000839s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 231  AND `is_del` = 0     [ RunTime:0.052902s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001410s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000525s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:39:04+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D231
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D231 [运行时间：0.059650s][吞吐率：16.76req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001491s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000361s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:39:24+08:00 ] 10.0.0.249 117.185.117.57 GET /index/wenan/view.html?id=264
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=264 [运行时间：0.106827s][吞吐率：9.36req/s] [内存消耗：3,472.98kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001351s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001603s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 264  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000829s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 264  AND `is_del` = 0     [ RunTime:0.048583s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:39:45+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=252
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=252 [运行时间：0.132997s][吞吐率：7.52req/s] [内存消耗：3,572.62kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001025s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 252  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000805s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 252  AND `is_del` = 0     [ RunTime:0.069917s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000426s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:39:45+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D252
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D252 [运行时间：0.060865s][吞吐率：16.43req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001104s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:40:03+08:00 ] 10.0.0.249 61.151.226.67 GET /index/wenan/view.html?id=231
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=231 [运行时间：0.111066s][吞吐率：9.00req/s] [内存消耗：3,473.31kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001110s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001700s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 231  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000896s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 231  AND `is_del` = 0     [ RunTime:0.051839s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:40:42+08:00 ] 10.0.0.249 211.138.117.136 POST /index/wenan/view.html?id=252
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=252 [运行时间：0.127780s][吞吐率：7.83req/s] [内存消耗：3,640.73kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000786s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 252  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000791s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 252  AND `is_del` = 0     [ RunTime:0.039079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001429s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000441s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `content`='&lt;p style=&quot;padding: 0px; text-align: center; color: rgba(0, 0, 0, 0.87); clear: both; font-family: &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; font-size: 15px; margin-top: 0px; margin-bottom: 0px; white-space: normal; -ms-word-break: break-all; min-height: 1em; max-width: 100%; box-sizing: inherit; background-color: rgb(255, 255, 255); overflow-wrap: break-word;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span class=&quot;edit&quot; style=&quot;margin: 0px; padding: 0px; font-weight: 700; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: inherit;&quot;&gt;高清二备&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.87); font-family: &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; font-size: 15px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: inherit; background-color: rgb(255, 255, 255);&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;设备信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table data-width=&quot;100%&quot; data-sort=&quot;sortDisabled&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;688&quot;&gt;&lt;tbody style=&quot;margin: 0px; padding: 0px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;margin: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; width=&quot;100&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;资产信息&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;margin: 0px; max-width: 100%; box-sizing: border-box !important; word-break: break-all;&quot;&gt;&lt;p&gt;规格： &lt;br&gt;&lt;/p&gt;&lt;p&gt;资产编号：&lt;/p&gt;&lt;p&gt;机身号：&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;margin: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;设备 IP&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;margin: 0px; max-width: 100%; box-sizing: border-box !important; word-break: break-all;&quot;&gt;192.168.101.17&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;margin: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;说明书&lt;/span&gt;&lt;br&gt;&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;margin: 0px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;a href=&quot;http://kc.nbtv.cn/index/wenan/view.html?id=447&quot; target=&quot;_self&quot;&gt;点击查看说明书&lt;/a&gt; &lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;margin: 0px; font-size: 12px; max-width: 100%; box-sizing: border-box !important; word-break: break-all;&quot; colspan=&quot;2&quot;&gt;&lt;span style=&quot;color: rgb(0, 112, 192); font-family: 隶书, SimLi; font-size: 20px;&quot;&gt;工程师说:&lt;/span&gt;&lt;br&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;此设备为高清二备服务器，集服务器、模块、存储于一体，作为高清播控系统的第二备份。&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.87); line-height: 24px; font-family: &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; font-size: 15px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: inherit; background-color: rgb(255, 255, 255);&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;维护信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span id=&quot;add_button&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); font-size: 22px; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p id=&quot;append&quot; style=&quot;white-space: normal;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;edit&quot; style=&quot;padding: 0px; color: rgb(62, 62, 62); clear: both; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Î¢ÈíÑÅºÚ, Arial, sans-serif; font-size: 15px; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);&quot;&gt;2016.12 &amp;nbsp; 维护&lt;/p&gt;&lt;p class=&quot;edit&quot; style=&quot;padding: 0px; color: rgb(62, 62, 62); clear: both; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Î¢ÈíÑÅºÚ, Arial, sans-serif; font-size: 15px; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);&quot;&gt;2017.6 &amp;nbsp; &amp;nbsp; 维护&lt;/p&gt;&lt;p class=&quot;edit&quot; style=&quot;padding: 0px; color: rgb(62, 62, 62); clear: both; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Î¢ÈíÑÅºÚ, Arial, sans-serif; font-size: 15px; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);&quot;&gt;2017.12 &amp;nbsp; 维护&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.87); font-family: &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; font-size: 15px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: inherit; background-color: rgb(255, 255, 255);&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;设备溯源.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;table data-width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;688&quot;&gt;&lt;tbody style=&quot;margin: 0px; padding: 0px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;margin: 0px; padding: 0px; line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td class=&quot;edit&quot; style=&quot;margin: 0px; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; width=&quot;90&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;2015&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;margin: 0px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; width=&quot;338&quot;&gt;上架&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.87); line-height: 24px; font-family: &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; font-size: 15px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: inherit; background-color: rgb(255, 255, 255);&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;其它说明.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span id=&quot;add_button2&quot; style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); font-size: 22px; -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; max-width: 100%; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p id=&quot;append2&quot; style=&quot;white-space: normal;&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;edit&quot; style=&quot;padding: 0px; color: rgb(62, 62, 62); clear: both; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Î¢ÈíÑÅºÚ, Arial, sans-serif; font-size: 15px; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;edit&quot; style=&quot;padding: 0px; color: rgb(62, 62, 62); clear: both; font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, Î¢ÈíÑÅºÚ, Arial, sans-serif; font-size: 15px; margin-top: 0px; margin-bottom: 0px; white-space: pre-wrap; -ms-word-wrap: break-word !important; min-height: 1em; max-width: 100%; box-sizing: border-box !important; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;margin: 0px; padding: 0px; color: rgba(0, 0, 0, 0.87); font-family: &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; font-size: 15px; white-space: normal; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: inherit; background-color: rgb(255, 255, 255);&quot;&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;'  WHERE  `id` = 252     [ RunTime:0.054403s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:40:44+08:00 ] 10.0.0.249 61.151.226.63 GET /index/wenan/view.html?id=252
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=252 [运行时间：0.101400s][吞吐率：9.86req/s] [内存消耗：3,472.73kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001234s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 252  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000763s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 252  AND `is_del` = 0     [ RunTime:0.043024s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:40:46+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=252
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=252 [运行时间：0.098052s][吞吐率：10.20req/s] [内存消耗：3,572.83kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001058s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 252  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000932s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 252  AND `is_del` = 0     [ RunTime:0.035433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000427s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:40:46+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D252
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D252 [运行时间：0.059334s][吞吐率：16.85req/s] [内存消耗：4,173.78kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001202s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001424s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000466s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:41:10+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=133
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=133 [运行时间：0.095144s][吞吐率：10.51req/s] [内存消耗：3,575.09kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 133  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000795s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 133  AND `is_del` = 0     [ RunTime:0.032117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000432s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:41:11+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D133
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D133 [运行时间：0.058241s][吞吐率：17.17req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001109s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000457s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:42:09+08:00 ] 10.0.0.249 61.151.226.143 GET /index/wenan/view.html?id=133
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=133 [运行时间：0.090392s][吞吐率：11.06req/s] [内存消耗：3,474.95kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001460s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 133  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000738s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 133  AND `is_del` = 0     [ RunTime:0.034488s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:43:12+08:00 ] 10.0.0.249 211.138.117.136 POST /index/wenan/view.html?id=133
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=133 [运行时间：0.094519s][吞吐率：10.58req/s] [内存消耗：3,646.56kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 133  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000385s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 133  AND `is_del` = 0     [ RunTime:0.033934s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000211s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `content`='&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; margin: 0px; padding: 0px; text-align: center; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; margin: 0px; padding: 0px; text-align: center; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span class=&quot;edit&quot; style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; margin: 0px; padding: 0px; word-wrap: break-word; word-break: break-all; font-size: 32px;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; font-weight: 700;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; margin: 0px; padding: 0px; word-wrap: break-word; word-break: break-all; font-size: 32px;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; font-weight: 700;&quot;&gt;高标清延时播出视频服务器&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;clistyle-section&quot; style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; padding: 0px; border: 0px currentColor; border-image: none; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; position: static; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;section style=&quot;margin-top: 10px; margin-bottom: 10px; position: static; box-sizing: inherit;&quot;&gt;&lt;section style=&quot;border-color: rgb(0, 187, 236); border-top-width: 1px; border-top-style: solid; box-sizing: inherit;&quot; data-clistyle-brushtype=&quot;bd&quot;&gt;&lt;br style=&quot;box-sizing: inherit;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;设备信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;table data-width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;435&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; width=&quot;100&quot;&gt;型号规格&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;SMD-7002-42H&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;资产编码&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;711104-151&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;机身号&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;14171643EN02022&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;备注&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; class=&quot;edit&quot;&gt;192.168.100.119&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;故障信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;table width=&quot;-49&quot;&gt;&lt;tbody style=&quot;box-sizing: inherit;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; height=&quot;32&quot; width=&quot;350&quot;&gt;日期&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; -ms-word-break: break-all; box-sizing: inherit;&quot; height=&quot;32&quot; width=&quot;350&quot;&gt;故障信息&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;2015年&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;无故障&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;6&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;6&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; -ms-word-break: break-all; box-sizing: inherit;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; -ms-word-break: break-all; box-sizing: inherit;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;设备溯源.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;table data-width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;429&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; class=&quot;edit&quot; width=&quot;90&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; class=&quot;edit&quot; width=&quot;338&quot;&gt;播出机房购入&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;操作说明.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;1&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;2&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;3&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;4&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;5&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;6&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;7&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;8&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;'  WHERE  `id` = 133     [ RunTime:0.030941s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:43:14+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=133
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=133 [运行时间：0.103062s][吞吐率：9.70req/s] [内存消耗：3,575.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001163s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001440s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001619s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 133  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000794s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 133  AND `is_del` = 0     [ RunTime:0.041410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001389s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000374s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:43:15+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D133
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D133 [运行时间：0.061748s][吞吐率：16.19req/s] [内存消耗：4,173.78kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001100s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000388s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:44:01+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=134
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=134 [运行时间：0.098135s][吞吐率：10.19req/s] [内存消耗：3,574.06kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 134  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000675s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 134  AND `is_del` = 0     [ RunTime:0.037152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000384s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:44:01+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D134
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D134 [运行时间：0.056288s][吞吐率：17.77req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000387s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:44:44+08:00 ] 10.0.0.249 211.138.117.136 POST /index/wenan/view.html?id=134
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=134 [运行时间：0.105688s][吞吐率：9.46req/s] [内存消耗：3,643.76kb] [文件加载：61]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 134  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000608s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 134  AND `is_del` = 0     [ RunTime:0.034878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000375s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `content`='&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; margin: 0px; padding: 0px; text-align: center; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;box-sizing: inherit; margin: 0px; padding: 0px; word-wrap: break-word; word-break: break-all; font-size: 32px;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; font-weight: 700;&quot;&gt;高标清延时播出视频服务器&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span class=&quot;edit&quot; style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; font-size: 32px; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;font-weight: 700; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; margin: 0px; padding: 0px; word-wrap: break-word; word-break: break-all; font-size: 32px;&quot;&gt;&lt;span style=&quot;box-sizing: inherit; font-weight: 700;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;clistyle-section&quot; style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; padding: 0px; border: 0px currentColor; border-image: none; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; position: static; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;section style=&quot;margin-top: 10px; margin-bottom: 10px; position: static; box-sizing: inherit;&quot;&gt;&lt;section style=&quot;border-color: rgb(0, 187, 236); border-top-width: 1px; border-top-style: solid; box-sizing: inherit;&quot; data-clistyle-brushtype=&quot;bd&quot;&gt;&lt;br style=&quot;box-sizing: inherit;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;设备信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;table data-width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;435&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; width=&quot;100&quot;&gt;型号规格&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;omn-7002&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;资产编码&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;711104-151&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;机身号&lt;/td&gt;&lt;td class=&quot;edit&quot; style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;14171643EN02022&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;备注&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; class=&quot;edit&quot;&gt;192.168.100.116&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;section class=&quot;wwei-editor&quot; style=&quot;font: 16px/24px &amp;quot;microsoft yahei&amp;quot;, arial, sans-serif; color: rgba(0, 0, 0, 0.870588); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal; box-sizing: inherit; widows: 1; font-size-adjust: none; font-stretch: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;&quot;&gt;&lt;h2 style=&quot;margin: 8px 0px 0px; padding: 0px; height: 32px; text-align: justify; color: inherit; line-height: 18px; font-family: &amp;quot;Microsoft Yahei&amp;quot;; font-size: 16px; font-weight: normal; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;故障信息.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;&lt;/section&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;table width=&quot;-49&quot;&gt;&lt;tbody style=&quot;box-sizing: inherit;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; height=&quot;32&quot; width=&quot;350&quot;&gt;日期&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; -ms-word-break: break-all; box-sizing: inherit;&quot; height=&quot;32&quot; width=&quot;350&quot;&gt;故障信息&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;2015年&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;无故障&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;6&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); box-sizing: inherit; word-break: break-all;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;6&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;box-sizing: inherit;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; -ms-word-break: break-all; box-sizing: inherit;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(126, 206, 244); border-image: none; -ms-word-break: break-all; box-sizing: inherit;&quot; class=&quot;edit&quot; height=&quot;32&quot; width=&quot;100&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;设备溯源.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;table data-width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;429&quot;&gt;&lt;tbody style=&quot;-ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;tr class=&quot;firstRow&quot; style=&quot;line-height: 30px; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot;&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; font-size: 12px; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; class=&quot;edit&quot; width=&quot;90&quot;&gt;&lt;br&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px 10px; border: 1px solid rgb(221, 221, 221); border-image: none; -ms-word-break: break-all; -ms-word-wrap: break-word !important; max-width: 100%; box-sizing: border-box !important;&quot; class=&quot;edit&quot; width=&quot;338&quot;&gt;播出机房购入&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&amp;nbsp;&lt;span style=&quot;margin: 0px; padding: 0px 2px 3px; line-height: 28px; border-bottom-color: rgb(0, 187, 236); border-bottom-width: 2px; border-bottom-style: solid; float: left; display: block; -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&lt;span style=&quot;margin: 0px 8px 0px 0px; padding: 4px 10px; border-radius: 80% 100% 90% 20%; color: rgb(255, 255, 255); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit; background-color: rgb(0, 187, 236);&quot;&gt;操作说明.&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 187, 236); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(0, 112, 129); -ms-word-break: break-all; -ms-word-wrap: break-word; box-sizing: inherit;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;1&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;2&amp;nbsp;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;3&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/p&gt;&lt;p class=&quot;edit&quot;&gt;4&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;5&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;6&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;7&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;8&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal;&quot; class=&quot;edit&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;'  WHERE  `id` = 134     [ RunTime:0.037981s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:44:47+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=134
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=134 [运行时间：0.094288s][吞吐率：10.61req/s] [内存消耗：3,574.03kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001065s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001783s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 134  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000854s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 134  AND `is_del` = 0     [ RunTime:0.031513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001488s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000449s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:44:48+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D134
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D134 [运行时间：0.057196s][吞吐率：17.48req/s] [内存消耗：4,173.78kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001192s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001457s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000459s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:45:00+08:00 ] 10.0.0.249 61.151.226.77 GET /index/wenan/view.html?id=134
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=134 [运行时间：0.099184s][吞吐率：10.08req/s] [内存消耗：3,473.98kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001178s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 134  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000773s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 134  AND `is_del` = 0     [ RunTime:0.039807s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:45:41+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=371
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=371 [运行时间：0.099994s][吞吐率：10.00req/s] [内存消耗：3,572.96kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001180s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 371  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000852s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 371  AND `is_del` = 0     [ RunTime:0.034390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000381s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:45:41+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D371
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D371 [运行时间：0.058841s][吞吐率：16.99req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000361s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:45:54+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=368
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=368 [运行时间：0.104951s][吞吐率：9.53req/s] [内存消耗：3,572.90kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001069s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001383s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 368  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000740s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 368  AND `is_del` = 0     [ RunTime:0.043355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000409s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:45:54+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D368
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D368 [运行时间：0.055764s][吞吐率：17.93req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000934s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000271s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:46:40+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=376
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=376 [运行时间：0.097203s][吞吐率：10.29req/s] [内存消耗：3,572.63kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001564s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 376  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000828s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 376  AND `is_del` = 0     [ RunTime:0.034593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000443s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:46:41+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D376
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D376 [运行时间：0.063592s][吞吐率：15.73req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001114s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000511s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:46:53+08:00 ] 10.0.0.249 101.226.79.235 GET /index/wenan/view.html?id=368
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=368 [运行时间：0.100219s][吞吐率：9.98req/s] [内存消耗：3,472.84kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001071s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001771s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 368  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000925s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 368  AND `is_del` = 0     [ RunTime:0.043724s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:47:05+08:00 ] 10.0.0.249 211.138.117.136 GET /index/wenan/view.html?id=380
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=380 [运行时间：0.093699s][吞吐率：10.67req/s] [内存消耗：3,572.90kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 380  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000646s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 380  AND `is_del` = 0     [ RunTime:0.032255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_admin` [ RunTime:0.001530s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_admin` WHERE  `id` = 9  AND `is_del` = 0  AND `status` = 1 LIMIT 1      [ RunTime:0.000644s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:47:05+08:00 ] 10.0.0.249 211.138.117.136 GET /index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D380
+[ log ] kc.nbtv.cn/index/api/sign.html?url=http%3A%2F%2Fkc.nbtv.cn%2Findex%2Fwenan%2Fview.html%3Fid%3D380 [运行时间：0.060088s][吞吐率：16.64req/s] [内存消耗：4,173.59kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001220s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000457s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:47:40+08:00 ] 10.0.0.249 120.204.200.83 GET /index/wenan/view.html?id=376
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=376 [运行时间：0.099883s][吞吐率：10.01req/s] [内存消耗：3,472.62kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001295s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 376  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000705s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 376  AND `is_del` = 0     [ RunTime:0.041476s ]
+
+---------------------------------------------------------------
+[ 2018-05-25T12:48:03+08:00 ] 10.0.0.249 101.226.113.48 GET /index/wenan/view.html?id=380
+[ log ] kc.nbtv.cn/index/wenan/view.html?id=380 [运行时间：0.096491s][吞吐率：10.36req/s] [内存消耗：3,472.84kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001110s ] mysql:dbname=kc;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_setting` [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_setting`  [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ppsao_wenan` [ RunTime:0.001779s ]
+[ sql ] [ SQL ] SELECT * FROM `ppsao_wenan` WHERE  `id` = 380  AND `is_del` = 0 LIMIT 1     [ RunTime:0.000851s ]
+[ sql ] [ SQL ] UPDATE `ppsao_wenan`  SET `views`=views+1,`views2`=views2+1  WHERE  `id` = 380  AND `is_del` = 0     [ RunTime:0.040236s ]
+
+---------------------------------------------------------------
